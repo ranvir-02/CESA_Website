@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CESA — Computer Engineering Students Association</title>
+  <meta name="description" content="Computer Engineering Students Association — R. C. Patel College of Engineering and Polytechnic, Shirpur" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="css/global.css" />
+
+  <!-- Bootloader CSS -->
+  <link rel="stylesheet" href="css/bootloader.css" />
+</head>
+<body class="bootloader-body">
+
+  <!-- ── Custom Cursor ── -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ================================================================
+       BOOTLOADER WRAPPER
+       ================================================================ -->
+  <div id="bootloader" class="bootloader" aria-hidden="true">
+
+    <!-- Door Left -->
+    <div class="door door-left" id="door-left">
+      <img src="images/left-door.png" alt="" class="door-img" draggable="false" />
+      <!-- Inner edge glow -->
+      <div class="door-edge door-edge-right"></div>
+    </div>
+
+    <!-- Door Right -->
+    <div class="door door-right" id="door-right">
+      <img src="images/right-door.png" alt="" class="door-img" draggable="false" />
+      <!-- Inner edge glow -->
+      <div class="door-edge door-edge-left"></div>
+    </div>
+
+    <!-- CESA Glow Text (shown between closed and open states) -->
+    <div class="boot-cesa-text" id="boot-cesa-text" aria-label="CESA">
+      <span class="boot-cesa-letter" style="--i:0">C</span>
+      <span class="boot-cesa-letter" style="--i:1">E</span>
+      <span class="boot-cesa-letter" style="--i:2">S</span>
+      <span class="boot-cesa-letter" style="--i:3">A</span>
+    </div>
+
+    <!-- Scanline overlay (subtle, no CRT) -->
+    <div class="boot-scanlines" id="boot-scanlines"></div>
+
+  </div>
+
+  <!-- ================================================================
+       REVEAL SCREEN
+       ================================================================ -->
+  <div id="reveal-screen" class="reveal-screen" aria-label="Welcome screen">
+
+    <!-- Particle canvas for reveal screen -->
+    <canvas id="reveal-particles" class="reveal-particles-canvas"></canvas>
+
+    <!-- Background radial gradients -->
+    <div class="reveal-bg-glow reveal-bg-glow-blue"></div>
+    <div class="reveal-bg-glow reveal-bg-glow-purple"></div>
+
+    <!-- Grid texture overlay -->
+    <div class="reveal-grid-overlay"></div>
+
+    <!-- Content Card -->
+    <div class="reveal-card" id="reveal-card">
+
+      <!-- Top accent line -->
+      <div class="reveal-card-line"></div>
+
+      <!-- CESA Logo -->
+      <div class="reveal-logo-wrap">
+        <img
+          src="images/cesa-logo.png"
+          alt="CESA Logo"
+          class="reveal-logo"
+          id="reveal-logo"
+        />
+        <div class="reveal-logo-ring"></div>
+      </div>
+
+      <!-- Welcome Text -->
+      <h1 class="reveal-welcome" id="reveal-welcome">
+        Welcome To
+        <span class="reveal-cesa-name">CESA</span>
+      </h1>
+
+      <!-- Tagline -->
+      <p class="reveal-tagline" id="reveal-tagline">
+        <span class="tagline-word">Learn</span>
+        <span class="tagline-dot">•</span>
+        <span class="tagline-word">Innovate</span>
+        <span class="tagline-dot">•</span>
+        <span class="tagline-word">Lead</span>
+      </p>
+
+      <!-- Divider -->
+      <div class="reveal-divider" id="reveal-divider"></div>
+
+      <!-- Organisation -->
+      <p class="reveal-org" id="reveal-org">
+        Computer Engineering Students Association<br />
+        <span>R. C. Patel College of Engineering and Polytechnic, Shirpur</span>
+      </p>
+
+      <!-- Scroll to Enter -->
+      <div class="reveal-enter" id="reveal-enter">
+        <span class="reveal-enter-text">Scroll To Enter</span>
+        <div class="reveal-enter-arrow">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+
+      <!-- Bottom accent line -->
+      <div class="reveal-card-line reveal-card-line-bottom"></div>
+
+    </div>
+
+    <!-- Corner decorations -->
+    <div class="reveal-corner reveal-corner-tl"></div>
+    <div class="reveal-corner reveal-corner-tr"></div>
+    <div class="reveal-corner reveal-corner-bl"></div>
+    <div class="reveal-corner reveal-corner-br"></div>
+
+  </div>
+
+  <!-- Bootloader JS -->
+  <script src="js/bootloader.js"></script>
+
+  <!-- Global JS (cursor only, minimal) -->
+  <script>
+    // ── Cursor ──────────────────────────────────────────────
+    const dot  = document.getElementById('cursor-dot');
+    const ring = document.getElementById('cursor-ring');
+    let ringX = 0, ringY = 0;
+    let mouseX = 0, mouseY = 0;
+
+    document.addEventListener('mousemove', e => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      dot.style.left = mouseX + 'px';
+      dot.style.top  = mouseY + 'px';
+    });
+
+    (function animateRing() {
+      ringX += (mouseX - ringX) * 0.12;
+      ringY += (mouseY - ringY) * 0.12;
+      ring.style.left = ringX + 'px';
+      ring.style.top  = ringY + 'px';
+      requestAnimationFrame(animateRing);
+    })();
+
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+      el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+    });
+  </script>
+
+</body>
+</html>

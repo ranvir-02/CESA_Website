@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home — CESA</title>
+  <meta name="description" content="Computer Engineering Students Association — R. C. Patel College of Engineering and Polytechnic, Shirpur" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Scroll To Top -->
+  <a href="#" id="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <!-- ── NAVBAR ─────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="navbar-inner">
+      <a href="home.html" class="navbar-logo">
+        <img src="images/cesa-logo.png" alt="CESA Logo" />
+        <span class="navbar-logo-text">CESA</span>
+      </a>
+
+      <ul class="navbar-links">
+        <li><a href="home.html"       class="nav-link active">Home</a></li>
+        <li><a href="about.html"      class="nav-link">About</a></li>
+        <li><a href="activities.html" class="nav-link">Activities</a></li>
+        <li><a href="gallery.html"    class="nav-link">Gallery</a></li>
+        <li><a href="team.html"       class="nav-link">Team</a></li>
+        <li><a href="contact.html"    class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger -->
+      <button class="navbar-hamburger" id="hamburger" aria-label="Open menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="navbar-mobile" id="navbar-mobile">
+    <button class="navbar-mobile-close" id="mobile-close" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <a href="home.html"       class="nav-link active">Home</a>
+    <a href="about.html"      class="nav-link">About</a>
+    <a href="activities.html" class="nav-link">Activities</a>
+    <a href="gallery.html"    class="nav-link">Gallery</a>
+    <a href="team.html"       class="nav-link">Team</a>
+    <a href="contact.html"    class="nav-link">Contact</a>
+  </div>
+
+  <!-- ── HERO SECTION ──────────────────────────────────────── -->
+  <section class="hero" id="hero">
+
+    <!-- Particle canvas -->
+    <canvas id="hero-particles" class="hero-particles"></canvas>
+
+    <!-- Background elements -->
+    <div class="hero-bg-glow hero-bg-glow-1"></div>
+    <div class="hero-bg-glow hero-bg-glow-2"></div>
+    <div class="hero-bg-glow hero-bg-glow-3"></div>
+    <div class="hero-grid-overlay"></div>
+
+    <!-- Floating orbs -->
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+
+    <div class="hero-content">
+
+      <!-- Eyebrow -->
+      <div class="hero-eyebrow reveal reveal-up">
+        <span class="hero-eyebrow-line"></span>
+        <span class="hero-eyebrow-text">Computer Engineering Students Association</span>
+        <span class="hero-eyebrow-line"></span>
+      </div>
+
+      <!-- Logo -->
+      <div class="hero-logo-wrap reveal reveal-scale delay-1">
+        <img src="images/cesa-logo.png" alt="CESA Logo" class="hero-logo" />
+        <div class="hero-logo-halo"></div>
+      </div>
+
+      <!-- Main Heading -->
+      <h1 class="hero-title reveal reveal-up delay-2">
+        <span class="hero-title-top">Welcome to</span>
+        <span class="hero-title-cesa">CESA</span>
+      </h1>
+
+      <!-- Tagline -->
+      <p class="hero-tagline reveal reveal-up delay-3">
+        <span>Learn</span>
+        <span class="hero-tagline-sep">•</span>
+        <span>Innovate</span>
+        <span class="hero-tagline-sep">•</span>
+        <span>Lead</span>
+      </p>
+
+      <!-- Sub text -->
+      <p class="hero-sub reveal reveal-up delay-4">
+        Empowering future engineers through knowledge, creativity, and leadership
+        at R. C. Patel College of Engineering and Polytechnic, Shirpur.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-cta reveal reveal-up delay-5">
+        <a href="about.html"   class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-circle-info"></i> Discover CESA
+        </a>
+        <a href="gallery.html" class="btn btn-ghost btn-lg">
+          <i class="fa-solid fa-images"></i> View Gallery
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll-indicator" id="hero-scroll">
+      <span class="hero-scroll-text">Scroll</span>
+      <div class="hero-scroll-line">
+        <div class="hero-scroll-dot"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── QUICK HIGHLIGHTS ──────────────────────────────────── -->
+  <section class="section highlights-section" id="highlights">
+    <div class="container">
+
+      <div class="section-header reveal reveal-up">
+        <span class="section-eyebrow">Explore</span>
+        <h2 class="section-title">What We Offer</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="highlights-grid hover-group">
+
+        <!-- About Card -->
+        <a href="about.html" class="highlight-card hover-item glass reveal reveal-up delay-1">
+          <div class="highlight-card-icon">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <div class="highlight-card-glow highlight-glow-blue"></div>
+          <h3 class="highlight-card-title">About CESA</h3>
+          <p class="highlight-card-desc">
+            Learn about our association, mission, vision, and the values that
+            drive us to build better engineers every day.
+          </p>
+          <div class="highlight-card-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="highlight-card-border"></div>
+        </a>
+
+        <!-- Activities Card -->
+        <a href="activities.html" class="highlight-card hover-item glass reveal reveal-up delay-2">
+          <div class="highlight-card-icon">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="highlight-card-glow highlight-glow-purple"></div>
+          <h3 class="highlight-card-title">Activities</h3>
+          <p class="highlight-card-desc">
+            From technical workshops and hackathons to leadership programs
+            and cultural events — there's something for everyone.
+          </p>
+          <div class="highlight-card-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="highlight-card-border highlight-card-border-purple"></div>
+        </a>
+
+        <!-- Gallery Card -->
+        <a href="gallery.html" class="highlight-card hover-item glass reveal reveal-up delay-3">
+          <div class="highlight-card-icon">
+            <i class="fa-solid fa-camera-retro"></i>
+          </div>
+          <div class="highlight-card-glow highlight-glow-blue"></div>
+          <h3 class="highlight-card-title">Gallery</h3>
+          <p class="highlight-card-desc">
+            Relive the moments from our flagship events — Tech Quest Arena,
+            Debate Competition, Antratech 2.0, and more.
+          </p>
+          <div class="highlight-card-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="highlight-card-border"></div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT SNAPSHOT ────────────────────────────────────── -->
+  <section class="section about-snapshot-section" id="about-snapshot">
+    <div class="container">
+
+      <div class="about-snapshot-grid">
+
+        <!-- Left: Text -->
+        <div class="about-snapshot-text">
+          <span class="section-eyebrow reveal reveal-left">Who We Are</span>
+          <h2 class="section-title text-left reveal reveal-left delay-1">
+            Building Engineers,<br />
+            <span style="color: var(--neon-purple);">Shaping Futures</span>
+          </h2>
+          <p class="reveal reveal-left delay-2">
+            CESA — the Computer Engineering Students Association — is the
+            official student body of the Computer Engineering Department at
+            R. C. Patel College of Engineering and Polytechnic, Shirpur.
+          </p>
+          <p class="reveal reveal-left delay-3">
+            We exist to bridge the gap between academic learning and
+            real-world application, fostering a culture of innovation,
+            collaboration, and continuous growth among students.
+          </p>
+
+          <!-- Feature list -->
+          <ul class="about-snapshot-features reveal reveal-left delay-4">
+            <li>
+              <span class="feature-dot feature-dot-blue"></span>
+              Technical skill development through hands-on activities
+            </li>
+            <li>
+              <span class="feature-dot feature-dot-purple"></span>
+              Leadership and management opportunities for students
+            </li>
+            <li>
+              <span class="feature-dot feature-dot-blue"></span>
+              Competitions, events, and inter-college engagements
+            </li>
+            <li>
+              <span class="feature-dot feature-dot-purple"></span>
+              Cultural and sports activities for holistic growth
+            </li>
+          </ul>
+
+          <a href="about.html" class="btn btn-primary reveal reveal-left delay-5">
+            <i class="fa-solid fa-arrow-right"></i> Learn More About Us
+          </a>
+        </div>
+
+        <!-- Right: Visual panel -->
+        <div class="about-snapshot-visual reveal reveal-right delay-2">
+
+          <div class="snapshot-card glass">
+            <!-- Accent corner -->
+            <div class="snapshot-corner snapshot-corner-tl"></div>
+            <div class="snapshot-corner snapshot-corner-br"></div>
+
+            <!-- CESA logo large -->
+            <div class="snapshot-logo-wrap">
+              <img src="images/cesa-logo.png" alt="CESA" class="snapshot-logo" />
+            </div>
+
+            <!-- Info rows -->
+            <div class="snapshot-info-row">
+              <div class="snapshot-info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Shirpur, Maharashtra</span>
+              </div>
+              <div class="snapshot-info-item">
+                <i class="fa-solid fa-building-columns"></i>
+                <span>R. C. Patel COEP</span>
+              </div>
+              <div class="snapshot-info-item">
+                <i class="fa-solid fa-users"></i>
+                <span>Computer Engineering Dept.</span>
+              </div>
+              <div class="snapshot-info-item">
+                <i class="fa-solid fa-star"></i>
+                <span>Learn • Innovate • Lead</span>
+              </div>
+            </div>
+
+            <!-- Animated ring -->
+            <div class="snapshot-ring snapshot-ring-1"></div>
+            <div class="snapshot-ring snapshot-ring-2"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TEAM TEASER ───────────────────────────────────────── -->
+  <section class="section team-teaser-section" id="team-teaser">
+    <div class="container">
+
+      <div class="section-header reveal reveal-up">
+        <span class="section-eyebrow">Our People</span>
+        <h2 class="section-title">Meet The Team</h2>
+        <div class="section-divider"></div>
+        <p class="section-sub reveal reveal-up delay-1">
+          Driven students who make CESA what it is — from the President
+          to every team member across Technical, Design, Management, Sports, and Cultural wings.
+        </p>
+      </div>
+
+      <!-- Team category pills -->
+      <div class="team-teaser-pills hover-group reveal reveal-up delay-2">
+        <div class="team-pill hover-item">
+          <i class="fa-solid fa-crown"></i>
+          <span>President</span>
+        </div>
+        <div class="team-pill hover-item">
+          <i class="fa-solid fa-code"></i>
+          <span>Technical</span>
+        </div>
+        <div class="team-pill hover-item">
+          <i class="fa-solid fa-pen-nib"></i>
+          <span>Designer</span>
+        </div>
+        <div class="team-pill hover-item">
+          <i class="fa-solid fa-sitemap"></i>
+          <span>Management</span>
+        </div>
+        <div class="team-pill hover-item">
+          <i class="fa-solid fa-trophy"></i>
+          <span>Sports</span>
+        </div>
+        <div class="team-pill hover-item">
+          <i class="fa-solid fa-music"></i>
+          <span>Cultural</span>
+        </div>
+        <div class="team-pill hover-item">
+          <i class="fa-solid fa-coins"></i>
+          <span>Treasurer</span>
+        </div>
+      </div>
+
+      <div class="team-teaser-cta reveal reveal-up delay-3">
+        <a href="team.html" class="btn btn-secondary btn-lg">
+          <i class="fa-solid fa-users"></i> View Full Team
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT TEASER ────────────────────────────────────── -->
+  <section class="section contact-teaser-section" id="contact-teaser">
+    <div class="container">
+
+      <div class="contact-teaser-card glass reveal reveal-scale">
+        <div class="contact-teaser-glow-left"></div>
+        <div class="contact-teaser-glow-right"></div>
+
+        <div class="contact-teaser-content">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="contact-teaser-title">Have Questions?<br />We're Here.</h2>
+          <p class="contact-teaser-sub">
+            Reach out to CESA for inquiries, collaborations, or just to say hello.
+            We'd love to hear from you.
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-paper-plane"></i> Contact Us
+          </a>
+        </div>
+
+        <div class="contact-teaser-icons">
+          <div class="contact-icon-item">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="contact-icon-item">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="contact-icon-item">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="contact-icon-item">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer injected by js/footer.js -->
+  <div id="footer"></div>
+
+  <!-- JS -->
+  <script src="js/footer.js"></script>
+  <script src="js/home.js"></script>
+
+</body>
+</html>

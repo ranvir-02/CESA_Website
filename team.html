@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team — CESA</title>
+  <meta name="description" content="Meet the CESA Team — Faculty, President, Technical, Designer, Management, Sports, Cultural and Treasurer" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/team.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Scroll To Top -->
+  <a href="#" id="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <!-- ── NAVBAR ─────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="navbar-inner">
+      <a href="home.html" class="navbar-logo">
+        <img src="images/cesa-logo.png" alt="CESA Logo" />
+        <span class="navbar-logo-text">CESA</span>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="home.html"       class="nav-link">Home</a></li>
+        <li><a href="about.html"      class="nav-link">About</a></li>
+        <li><a href="activities.html" class="nav-link">Activities</a></li>
+        <li><a href="gallery.html"    class="nav-link">Gallery</a></li>
+        <li><a href="team.html"       class="nav-link active">Team</a></li>
+        <li><a href="contact.html"    class="nav-link">Contact</a></li>
+      </ul>
+      <button class="navbar-hamburger" id="hamburger" aria-label="Open menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="navbar-mobile" id="navbar-mobile">
+    <button class="navbar-mobile-close" id="mobile-close" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <a href="home.html"       class="nav-link">Home</a>
+    <a href="about.html"      class="nav-link">About</a>
+    <a href="activities.html" class="nav-link">Activities</a>
+    <a href="gallery.html"    class="nav-link">Gallery</a>
+    <a href="team.html"       class="nav-link active">Team</a>
+    <a href="contact.html"    class="nav-link">Contact</a>
+  </div>
+
+  <!-- ── PAGE HERO ──────────────────────────────────────────── -->
+  <section class="page-hero team-hero">
+    <canvas class="page-hero-canvas" id="team-hero-canvas"></canvas>
+    <div class="team-hero-glow-1"></div>
+    <div class="team-hero-glow-2"></div>
+    <div class="page-hero-content">
+      <p class="page-hero-eyebrow">The People Behind CESA</p>
+      <h1 class="page-hero-title">Meet The Team</h1>
+      <p class="page-hero-subtitle">Faculty · Leaders · Innovators</p>
+      <div class="page-hero-line"></div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       FACULTY & ADMINISTRATION BLOCK
+       Three prominent centered cards: Principal, HOD, CESA Co-ordinator
+       ================================================================ -->
+  <section class="section faculty-section" id="faculty">
+    <div class="container">
+
+      <div class="section-header reveal reveal-up">
+        <span class="section-eyebrow">Our Mentors</span>
+        <h2 class="section-title">Faculty &amp; Administration</h2>
+        <div class="section-divider"></div>
+        <p class="team-section-desc">
+          The guiding pillars behind CESA — providing leadership,
+          mentorship, and institutional support to the association.
+        </p>
+      </div>
+
+      <div class="faculty-cards-row hover-group">
+
+        <!-- Principal -->
+        <div class="faculty-card glass hover-item reveal reveal-up delay-1">
+          <div class="faculty-card-top">
+            <div class="faculty-avatar-wrap">
+              <div class="faculty-avatar">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <div class="faculty-avatar-ring"></div>
+              <div class="faculty-avatar-glow"></div>
+            </div>
+            <div class="faculty-badge faculty-badge-gold">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+          </div>
+          <div class="faculty-card-body">
+            <h3 class="faculty-name">Principal Name</h3>
+            <p class="faculty-position faculty-position-gold">Principal</p>
+            <p class="faculty-institution">
+              R. C. Patel College of Engineering<br />and Polytechnic, Shirpur
+            </p>
+            <div class="faculty-divider"></div>
+            <a
+              href="https://linkedin.com/in/linkedin-id"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="faculty-linkedin"
+              aria-label="LinkedIn Profile"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn Profile</span>
+            </a>
+          </div>
+          <div class="faculty-card-glow faculty-glow-gold"></div>
+        </div>
+
+        <!-- HOD -->
+        <div class="faculty-card faculty-card-hod glass hover-item reveal reveal-up delay-2">
+          <div class="faculty-card-top">
+            <div class="faculty-avatar-wrap">
+              <div class="faculty-avatar faculty-avatar-large">
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+              <div class="faculty-avatar-ring faculty-ring-blue"></div>
+              <div class="faculty-avatar-glow faculty-glow-blue-soft"></div>
+            </div>
+            <div class="faculty-badge faculty-badge-blue">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+          </div>
+          <div class="faculty-card-body">
+            <h3 class="faculty-name">HOD Name</h3>
+            <p class="faculty-position faculty-position-blue">
+              Head of Department
+            </p>
+            <p class="faculty-dept">Computer Engineering</p>
+            <p class="faculty-institution">
+              R. C. Patel College of Engineering<br />and Polytechnic, Shirpur
+            </p>
+            <div class="faculty-divider"></div>
+            <a
+              href="https://linkedin.com/in/linkedin-id"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="faculty-linkedin"
+              aria-label="LinkedIn Profile"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn Profile</span>
+            </a>
+          </div>
+          <div class="faculty-card-glow faculty-glow-blue-card"></div>
+        </div>
+
+        <!-- CESA Co-ordinator -->
+        <div class="faculty-card glass hover-item reveal reveal-up delay-3">
+          <div class="faculty-card-top">
+            <div class="faculty-avatar-wrap">
+              <div class="faculty-avatar">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="faculty-avatar-ring faculty-ring-purple"></div>
+              <div class="faculty-avatar-glow faculty-glow-purple-soft"></div>
+            </div>
+            <div class="faculty-badge faculty-badge-purple">
+              <i class="fa-solid fa-award"></i>
+            </div>
+          </div>
+          <div class="faculty-card-body">
+            <h3 class="faculty-name">Co-ordinator Name</h3>
+            <p class="faculty-position faculty-position-purple">CESA Co-ordinator</p>
+            <p class="faculty-institution">
+              Computer Engineering Department<br />R. C. Patel COEP, Shirpur
+            </p>
+            <div class="faculty-divider"></div>
+            <a
+              href="https://linkedin.com/in/linkedin-id"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="faculty-linkedin"
+              aria-label="LinkedIn Profile"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn Profile</span>
+            </a>
+          </div>
+          <div class="faculty-card-glow faculty-glow-purple-card"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Neon Divider -->
+  <div class="container"><hr class="neon-divider" /></div>
+
+  <!-- ================================================================
+       PRESIDENT
+       ================================================================ -->
+  <section class="section team-section" id="president">
+    <div class="container">
+
+      <div class="team-section-header reveal reveal-up">
+        <div class="team-section-icon team-icon-gold">
+          <i class="fa-solid fa-crown"></i>
+        </div>
+        <h2 class="team-section-title">President</h2>
+      </div>
+
+      <!-- Single centered president card -->
+      <div class="president-wrap">
+        <div class="president-card glass reveal reveal-scale delay-1">
+          <div class="president-photo-wrap">
+            <img
+              src="images/team/president.jpg"
+              alt="President"
+              class="president-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            />
+            <div class="president-photo-fallback">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="president-photo-ring"></div>
+            <div class="president-photo-ring president-photo-ring-2"></div>
+          </div>
+          <div class="president-info">
+            <div class="president-badge">
+              <i class="fa-solid fa-crown"></i> President
+            </div>
+            <h2 class="president-name">President Name</h2>
+            <p class="president-position">President, CESA</p>
+            <div class="president-meta">
+              <span class="president-class">
+                <i class="fa-solid fa-graduation-cap"></i> Class / Year
+              </span>
+            </div>
+            <div class="president-contact-row">
+              <a
+                href="https://linkedin.com/in/linkedin-id"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="president-linkedin"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+                LinkedIn
+              </a>
+              <a
+                href="tel:+910000000000"
+                class="president-contact-btn"
+                aria-label="Contact"
+              >
+                <i class="fa-solid fa-phone"></i>
+                Contact
+              </a>
+            </div>
+          </div>
+          <div class="president-card-glow"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Neon Divider -->
+  <div class="container"><hr class="neon-divider" /></div>
+
+  <!-- ================================================================
+       TECHNICAL TEAM
+       ================================================================ -->
+  <section class="section team-section" id="technical-team">
+    <div class="container">
+
+      <div class="team-section-header reveal reveal-up">
+        <div class="team-section-icon team-icon-blue">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h2 class="team-section-title">Technical Team</h2>
+      </div>
+
+      <div class="team-cards-grid hover-group">
+
+        <div class="member-card glass hover-item reveal reveal-up delay-1">
+          <div class="member-photo-wrap">
+            <img src="images/team/technical-1.jpg" alt="Technical Member" class="member-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="member-photo-fallback"><i class="fa-solid fa-user"></i></div>
+            <div class="member-photo-ring ring-blue"></div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Member Name</h4>
+            <p class="member-position position-blue">Technical Lead</p>
+            <p class="member-class"><i class="fa-solid fa-graduation-cap"></i> Class / Year</p>
+          </div>
+          <div class="member-actions">
+            <a href="https://linkedin.com/in/linkedin-id" target="_blank" rel="noopener noreferrer"
+               class="member-action-btn member-btn-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="tel:+910000000000"
+               class="member-action-btn member-btn-contact" aria-label="Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="member-card-glow glow-blue"></div>
+        </div>
+
+        <div class="member-card glass hover-item reveal reveal-up delay-2">
+          <div class="member-photo-wrap">
+            <img src="images/team/technical-2.jpg" alt="Technical Member" class="member-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="member-photo-fallback"><i class="fa-solid fa-user"></i></div>
+            <div class="member-photo-ring ring-blue"></div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Member Name</h4>
+            <p class="member-position position-blue">Technical Member</p>
+            <p class="member-class"><i class="fa-solid fa-graduation-cap"></i> Class / Year</p>
+          </div>
+          <div class="member-actions">
+            <a href="https://linkedin.com/in/linkedin-id" target="_blank" rel="noopener noreferrer"
+               class="member-action-btn member-btn-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="tel:+910000000000"
+               class="member-action-btn member-btn-contact" aria-label="Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="member-card-glow glow-blue"></div>
+        </div>
+
+        <div class="member-card glass hover-item reveal reveal-up delay-3">
+          <div class="member-photo-wrap">
+            <img src="images/team/technical-3.jpg" alt="Technical Member" class="member-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="member-photo-fallback"><i class="fa-solid fa-user"></i></div>
+            <div class="member-photo-ring ring-blue"></div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Member Name</h4>
+            <p class="member-position position-blue">Technical Member</p>
+            <p class="member-class"><i class="fa-solid fa-graduation-cap"></i> Class / Year</p>
+          </div>
+          <div class="member-actions">
+            <a href="https://linkedin.com/in/linkedin-id" target="_blank" rel="noopener noreferrer"
+               class="member-action-btn member-btn-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="tel:+910000000000"
+               class="member-action-btn member-btn-contact" aria-label="Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="member-card-glow glow-blue"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       DESIGNER TEAM
+       ================================================================ -->
+  <section class="section team-section" id="designer-team">
+    <div class="container">
+
+      <div class="team-section-header reveal reveal-up">
+        <div class="team-section-icon team-icon-purple">
+          <i class="fa-solid fa-pen-nib"></i>
+        </div>
+        <h2 class="team-section-title">Designer Team</h2>
+      </div>
+
+      <div class="team-cards-grid hover-group">
+
+        <div class="member-card glass hover-item reveal reveal-up delay-1">
+          <div class="member-photo-wrap">
+            <img src="images/team/designer-1.jpg" alt="Designer Member" class="member-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="member-photo-fallback"><i class="fa-solid fa-user"></i></div>
+            <div class="member-photo-ring ring-purple"></div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Member Name</h4>
+            <p class="member-position position-purple">Design Lead</p>
+            <p class="member-class"><i class="fa-solid fa-graduation-cap"></i> Class / Year</p>
+          </div>
+          <div class="member-actions">
+            <a href="https://linkedin.com/in/linkedin-id" target="_blank" rel="noopener noreferrer"
+               class="member-action-btn member-btn-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="tel:+910000000000"
+               class="member-action-btn member-btn-contact" aria-label="Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="member-card-glow glow-purple"></div>
+        </div>
+
+        <div class="member-card glass hover-item reveal reveal-up delay-2">
+          <div class="member-photo-wrap">
+            <img src="images/team/designer-2.jpg" alt="Designer Member" class="member-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="member-photo-fallback"><i class="fa-solid fa-user"></i></div>
+            <div class="member-photo-ring ring-purple"></div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Member Name</h4>
+            <p class="member-position position-purple">Designer</p>
+            <p class="member-class"><i class="fa-solid fa-graduation-cap"></i> Class / Year</p>
+          </div>
+          <div class="member-actions">
+            <a href="https://linkedin.com/in/linkedin-id" target="_blank" rel="noopener noreferrer"
+               class="member-action-btn member-btn-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="tel:+910000000000"
+               class="member-action-btn member-btn-contact" aria-label="Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="member-card-glow glow-purple"></div>
+        </div>
+
+        <div class="member-card glass hover-item reveal reveal-up delay-3">
+          <div class="member-photo-wrap">
+            <img src="images/team/designer-3.jpg" alt="Designer Member" class="member-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="member-photo-fallback"><i class="fa-solid fa-user"></i></div>
+            <div class="member-photo-ring ring-purple"></div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Member Name</h4>
+            <p class="member-position position-purple">Designer</p>
+            <p class="member-class"><i class="fa-solid fa-graduation-cap"></i> Class / Year</p>
+          </div>
+          <div class="member-actions">
+            <a href="https://linkedin.com/in/linkedin-id" target="_blank" rel="noopener noreferrer"
+               class="member-action-btn member-btn-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="tel:+910000000000"
+               class="member-action-btn member-btn-contact" aria-label="Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="member-card-glow glow-purple"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       MANAGEMENT TEAM
+       ================================================================ -->
+  <section class="section team-section" id="management-team">
+    <div class="container">
+
+      <div class="team-section-header reveal reveal-up">
+        <div class="team-section-icon team-icon-blue">
+          <i class="fa-solid fa-sitemap"></i>
+        </div>
+        <h2 class="team-section-title">Management Team</h2>
+      </div>
+
+      <div class="team-cards-grid hover-group">
+
+        <div class="member-card glass hover-item reveal reveal-up delay-1">
+          <div class="member-photo-wrap">
+            <img src="images/team/management-1.jpg" alt="Management Member" class="member-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="member-photo-fallback"><i class="fa-solid fa-user"></i></div>
+            <div class="member-photo-ring ring-blue"></div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Member Name</h4>
+            <p class="member-position position-blue">Management Lead</p>
+            <p class="member-class"><i class="fa-solid fa-graduation-cap"></i> Class / Year</p>
+          </div>
+          <div class="member-actions">
+            <a href="https://linkedin.com/in/linkedin-id" target="_blank" rel="noopener noreferrer"
+               class="member-action-btn member-btn-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="tel:+910000000000"
+               class="member-action-btn member-btn-contact" aria-label="Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="member-card-glow glow-blue"></div>
+        </div>
+
+        <div class="member-card glass hover-item reveal reveal-up delay-2">
+          <div class="member-photo-wrap">
+            <img src="images/team/management-2.jpg" alt="Management Member" class="member-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="member-photo-fallback"><i class="fa-solid fa-user"></i></div>
+            <div class="member-photo-ring ring-blue"></div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Member Name</h4>
+            <p class="member-position position-blue">Management Member</p>
+            <p class="member-class"><i class="fa-solid fa-graduation-cap"></i> Class / Year</p>
+          </div>
+          <div class="member-actions">
+            <a href="https://linkedin.com/in/linkedin-id" target="_blank" rel="noopener noreferrer"
+               class="member-action-btn member-btn-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="tel:+910000000000"
+               class="member-action-btn member-btn-contact" aria-label="Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="member-card-glow glow-blue"></div>
+        </div>
+
+        <div class="member-card glass hover-item reveal reveal-up delay-3">
+          <div class="member-photo-wrap">
+            <img src="images/team/management-3.jpg" alt="Management Member" class="member-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="member-photo-fallback"><i class="fa-solid fa-user"></i></div>
+            <div class="member-photo-ring ring-blue"></div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Member Name</h4>
+            <p class="member-position position-blue">Management Member</p>
+            <p class="member-class"><i class="fa-solid fa-graduation-cap"></i> Class / Year</p>
+          </div>
+          <div class="member-actions">
+            <a href="https://linkedin.com/in/linkedin-id" target="_blank" rel="noopener noreferrer"
+               class="member-action-btn member-btn-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="tel:+910000000000"
+               class="member-action-btn member-btn-contact" aria-label="Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="member-card-glow glow-blue"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SPORTS TEAM
+       ================================================================ -->
+  <section class="section team-section" id="sports-team">
+    <div class="container">
+
+      <div class="team-section-header reveal reveal-up">
+        <div class="team-section-icon team-icon-purple">
+          <i class="fa-solid fa-trophy"></i>
+        </div>
+        <h2 class="team-section-title">Sports Team</h2>
+      </div>
+
+      <div class="team-cards-grid hover-group">
+
+        <div class="member-card glass hover-item reveal reveal-up delay-1">
+          <div class="member-photo-wrap">
+            <img src="images/team/sports-1.jpg" alt="Sports Member" class="member-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="member-photo-fallback"><i class="fa-solid fa-user"></i></div>
+            <div class="member-photo-ring ring-purple"></div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Member Name</h4>
+            <p class="member-position position-purple">Sports Captain</p>
+            <p class="member-class"><i class="fa-solid fa-graduation-cap"></i> Class / Year</p>
+          </div>
+          <div class="member-actions">
+            <a href="https://linkedin.com/in/linkedin-id" target="_blank" rel="noopener noreferrer"
+               class="member-action-btn member-btn-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="tel:+910000000000"
+               class="member-action-btn member-btn-contact" aria-label="Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="member-card-glow glow-purple"></div>
+        </div>
+
+        <div class="member-card glass hover-item reveal reveal-up delay-2">
+          <div class="member-photo-wrap">
+            <img src="images/team/sports-2.jpg" alt="Sports Member" class="member-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="member-photo-fallback"><i class="fa-solid fa-user"></i></div>
+            <div class="member-photo-ring ring-purple"></div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Member Name</h4>
+            <p class="member-position position-purple">Sports Member</p>
+            <p class="member-class"><i class="fa-solid fa-graduation-cap"></i> Class / Year</p>
+          </div>
+          <div class="member-actions">
+            <a href="https://linkedin.com/in/linkedin-id" target="_blank" rel="noopener noreferrer"
+               class="member-action-btn member-btn-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="tel:+910000000000"
+               class="member-action-btn member-btn-contact" aria-label="Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="member-card-glow glow-purple"></div>
+        </div>
+
+        <div class="member-card glass hover-item reveal reveal-up delay-3">
+          <div class="member-photo-wrap">
+            <img src="images/team/sports-3.jpg" alt="Sports Member" class="member-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="member-photo-fallback"><i class="fa-solid fa-user"></i></div>
+            <div class="member-photo-ring ring-purple"></div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Member Name</h4>
+            <p class="member-position position-purple">Sports Member</p>
+            <p class="member-class"><i class="fa-solid fa-graduation-cap"></i> Class / Year</p>
+          </div>
+          <div class="member-actions">
+            <a href="https://linkedin.com/in/linkedin-id" target="_blank" rel="noopener noreferrer"
+               class="member-action-btn member-btn-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="tel:+910000000000"
+               class="member-action-btn member-btn-contact" aria-label="Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="member-card-glow glow-purple"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       CULTURAL TEAM
+       ================================================================ -->
+  <section class="section team-section" id="cultural-team">
+    <div class="container">
+
+      <div class="team-section-header reveal reveal-up">
+        <div class="team-section-icon team-icon-blue">
+          <i class="fa-solid fa-music"></i>
+        </div>
+        <h2 class="team-section-title">Cultural Team</h2>
+      </div>
+
+      <div class="team-cards-grid hover-group">
+
+        <div class="member-card glass hover-item reveal reveal-up delay-1">
+          <div class="member-photo-wrap">
+            <img src="images/team/cultural-1.jpg" alt="Cultural Member" class="member-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="member-photo-fallback"><i class="fa-solid fa-user"></i></div>
+            <div class="member-photo-ring ring-blue"></div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Member Name</h4>
+            <p class="member-position position-blue">Cultural Secretary</p>
+            <p class="member-class"><i class="fa-solid fa-graduation-cap"></i> Class / Year</p>
+          </div>
+          <div class="member-actions">
+            <a href="https://linkedin.com/in/linkedin-id" target="_blank" rel="noopener noreferrer"
+               class="member-action-btn member-btn-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="tel:+910000000000"
+               class="member-action-btn member-btn-contact" aria-label="Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="member-card-glow glow-blue"></div>
+        </div>
+
+        <div class="member-card glass hover-item reveal reveal-up delay-2">
+          <div class="member-photo-wrap">
+            <img src="images/team/cultural-2.jpg" alt="Cultural Member" class="member-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="member-photo-fallback"><i class="fa-solid fa-user"></i></div>
+            <div class="member-photo-ring ring-blue"></div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Member Name</h4>
+            <p class="member-position position-blue">Cultural Member</p>
+            <p class="member-class"><i class="fa-solid fa-graduation-cap"></i> Class / Year</p>
+          </div>
+          <div class="member-actions">
+            <a href="https://linkedin.com/in/linkedin-id" target="_blank" rel="noopener noreferrer"
+               class="member-action-btn member-btn-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="tel:+910000000000"
+               class="member-action-btn member-btn-contact" aria-label="Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="member-card-glow glow-blue"></div>
+        </div>
+
+        <div class="member-card glass hover-item reveal reveal-up delay-3">
+          <div class="member-photo-wrap">
+            <img src="images/team/cultural-3.jpg" alt="Cultural Member" class="member-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="member-photo-fallback"><i class="fa-solid fa-user"></i></div>
+            <div class="member-photo-ring ring-blue"></div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Member Name</h4>
+            <p class="member-position position-blue">Cultural Member</p>
+            <p class="member-class"><i class="fa-solid fa-graduation-cap"></i> Class / Year</p>
+          </div>
+          <div class="member-actions">
+            <a href="https://linkedin.com/in/linkedin-id" target="_blank" rel="noopener noreferrer"
+               class="member-action-btn member-btn-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="tel:+910000000000"
+               class="member-action-btn member-btn-contact" aria-label="Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="member-card-glow glow-blue"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       TREASURER
+       ================================================================ -->
+  <section class="section team-section" id="treasurer">
+    <div class="container">
+
+      <div class="team-section-header reveal reveal-up">
+        <div class="team-section-icon team-icon-gold">
+          <i class="fa-solid fa-coins"></i>
+        </div>
+        <h2 class="team-section-title">Treasurer</h2>
+      </div>
+
+      <!-- Single centered treasurer card -->
+      <div class="treasurer-wrap">
+        <div class="member-card member-card-treasurer glass reveal reveal-scale delay-1">
+          <div class="member-photo-wrap">
+            <img src="images/team/treasurer.jpg" alt="Treasurer" class="member-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="member-photo-fallback"><i class="fa-solid fa-user"></i></div>
+            <div class="member-photo-ring ring-gold"></div>
+          </div>
+          <div class="member-info">
+            <h4 class="member-name">Member Name</h4>
+            <p class="member-position position-gold">Treasurer, CESA</p>
+            <p class="member-class"><i class="fa-solid fa-graduation-cap"></i> Class / Year</p>
+          </div>
+          <div class="member-actions">
+            <a href="https://linkedin.com/in/linkedin-id" target="_blank" rel="noopener noreferrer"
+               class="member-action-btn member-btn-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="tel:+910000000000"
+               class="member-action-btn member-btn-contact" aria-label="Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <div class="member-card-glow glow-gold"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer injected by js/footer.js -->
+  <div id="footer"></div>
+
+  <!-- JS -->
+  <script src="js/footer.js"></script>
+  <script src="js/team.js"></script>
+
+</body>
+</html>

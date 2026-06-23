@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — CESA</title>
+  <meta name="description" content="Contact CESA — R. C. Patel College of Engineering and Polytechnic, Shirpur" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Scroll To Top -->
+  <a href="#" id="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <!-- ── NAVBAR ─────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="navbar-inner">
+      <a href="home.html" class="navbar-logo">
+        <img src="images/cesa-logo.png" alt="CESA Logo" />
+        <span class="navbar-logo-text">CESA</span>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="home.html"       class="nav-link">Home</a></li>
+        <li><a href="about.html"      class="nav-link">About</a></li>
+        <li><a href="activities.html" class="nav-link">Activities</a></li>
+        <li><a href="gallery.html"    class="nav-link">Gallery</a></li>
+        <li><a href="team.html"       class="nav-link">Team</a></li>
+        <li><a href="contact.html"    class="nav-link active">Contact</a></li>
+      </ul>
+      <button class="navbar-hamburger" id="hamburger" aria-label="Open menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="navbar-mobile" id="navbar-mobile">
+    <button class="navbar-mobile-close" id="mobile-close" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <a href="home.html"       class="nav-link">Home</a>
+    <a href="about.html"      class="nav-link">About</a>
+    <a href="activities.html" class="nav-link">Activities</a>
+    <a href="gallery.html"    class="nav-link">Gallery</a>
+    <a href="team.html"       class="nav-link">Team</a>
+    <a href="contact.html"    class="nav-link active">Contact</a>
+  </div>
+
+  <!-- ── PAGE HERO ──────────────────────────────────────────── -->
+  <section class="page-hero contact-hero">
+    <canvas class="page-hero-canvas" id="contact-hero-canvas"></canvas>
+    <div class="contact-hero-glow-1"></div>
+    <div class="contact-hero-glow-2"></div>
+    <div class="page-hero-content">
+      <p class="page-hero-eyebrow">Get In Touch</p>
+      <h1 class="page-hero-title">Contact Us</h1>
+      <p class="page-hero-subtitle">We'd Love To Hear From You</p>
+      <div class="page-hero-line"></div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       CONTACT INFO STRIP
+       ================================================================ -->
+  <section class="section contact-info-section" id="contact-info">
+    <div class="container">
+
+      <div class="section-header reveal reveal-up">
+        <span class="section-eyebrow">Reach Us</span>
+        <h2 class="section-title">Contact Information</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-info-grid hover-group">
+
+        <!-- Address -->
+        <div class="contact-info-card glass hover-item reveal reveal-up delay-1">
+          <div class="contact-info-icon contact-icon-blue">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="contact-info-glow contact-glow-blue"></div>
+          <h3 class="contact-info-label">Address</h3>
+          <p class="contact-info-value">
+            R. C. Patel College of Engineering and Polytechnic,<br />
+            Shirpur, Dist. Dhule,<br />
+            Maharashtra — 425405, India
+          </p>
+          <a
+            href="https://maps.google.com/?q=RC+Patel+College+Shirpur" target="_blank" rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-info-link"
+          >
+            <i class="fa-solid fa-map-location-dot"></i>
+            View on Maps
+          </a>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-info-card glass hover-item reveal reveal-up delay-2">
+          <div class="contact-info-icon contact-icon-purple">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="contact-info-glow contact-glow-purple"></div>
+          <h3 class="contact-info-label">Email</h3>
+          <p class="contact-info-value">
+            cesa@rcpet.edu.in
+          </p>
+          <a
+            href="mailto:team.cesa2026@gmail.com"
+            class="contact-info-link"
+          >
+            <i class="fa-solid fa-paper-plane"></i>
+            Send Email
+          </a>
+        </div>
+
+        <!-- Instagram -->
+        <div class="contact-info-card glass hover-item reveal reveal-up delay-3">
+          <div class="contact-info-icon contact-icon-blue">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="contact-info-glow contact-glow-blue"></div>
+          <h3 class="contact-info-label">Instagram</h3>
+          <p class="contact-info-value">
+            @cesa_rcpet
+          </p>
+          <a
+            href="https://www.instagram.com/rcpcoep_cesa?igsh=eGJmZGFmaW9ucWl1"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-info-link"
+          >
+            <i class="fa-brands fa-instagram"></i>
+            Follow Us
+          </a>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-info-card glass hover-item reveal reveal-up delay-1">
+          <div class="contact-info-icon contact-icon-purple">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="contact-info-glow contact-glow-purple"></div>
+          <h3 class="contact-info-label">LinkedIn</h3>
+          <p class="contact-info-value">
+            CESA — R. C. Patel COEP
+          </p>
+          <a
+            href="https://linkedin.com/company/cesa-rcpet" target="_blank" rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-info-link"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+            Connect With Us
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       MAP + FORM SECTION
+       ================================================================ -->
+  <section class="section contact-main-section" id="contact-main">
+    <div class="container">
+
+      <div class="contact-main-grid">
+
+        <!-- ── Google Maps ──────────────────────────────────── -->
+        <div class="contact-map-col reveal reveal-left">
+          <div class="contact-map-header">
+            <div class="contact-map-icon">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <div>
+              <h3 class="contact-map-title">Find Us Here</h3>
+              <p class="contact-map-sub">R. C. Patel College of Engineering, Shirpur</p>
+            </div>
+          </div>
+
+          <div class="contact-map-wrap">
+            <!-- Google Maps embed -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.0!2d74.882!3d21.348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd9f8b5e5b5e5b5%3A0x5b5b5b5b5b5b5b5b!2sR.C.%20Patel%20Institute%20of%20Technology%2C%20Shirpur!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="R. C. Patel College of Engineering and Polytechnic, Shirpur — Google Maps"
+            ></iframe>
+            <!-- Overlay for neon border effect -->
+            <div class="contact-map-overlay"></div>
+          </div>
+
+          <!-- Quick contact links below map -->
+          <div class="contact-quick-links">
+            <a href="mailto:team.cesa2026@gmail.com" class="contact-quick-btn">
+              <i class="fa-solid fa-envelope"></i>
+              <span>team.cesa2026@gmail.com</span>
+            </a>
+            <a href="https://www.instagram.com/rcpcoep_cesa?igsh=eGJmZGFmaW9ucWl1" target="_blank" rel="noopener noreferrer" class="contact-quick-btn">
+              <i class="fa-brands fa-instagram"></i>
+              <span>@rcpcoep_cesa</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- ── Contact Form ──────────────────────────────────── -->
+        <div class="contact-form-col reveal reveal-right delay-1">
+
+          <div class="contact-form-header">
+            <div class="contact-form-icon">
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+            <div>
+              <h3 class="contact-form-title">Send a Message</h3>
+              <p class="contact-form-sub">We'll get back to you as soon as possible.</p>
+            </div>
+          </div>
+
+          <form class="contact-form glass" id="contact-form" novalidate>
+
+            <!-- Top accent line -->
+            <div class="form-top-line"></div>
+
+            <!-- Name + Email row -->
+            <div class="form-row">
+
+              <div class="form-group" id="group-name">
+                <label for="input-name" class="form-label">
+                  <i class="fa-solid fa-user"></i> Full Name
+                </label>
+                <div class="form-input-wrap">
+                  <input
+                    type="text"
+                    id="input-name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Your full name"
+                    autocomplete="name"
+                    required
+                  />
+                  <div class="form-input-glow"></div>
+                </div>
+                <span class="form-error" id="error-name"></span>
+              </div>
+
+              <div class="form-group" id="group-email">
+                <label for="input-email" class="form-label">
+                  <i class="fa-solid fa-envelope"></i> Email Address
+                </label>
+                <div class="form-input-wrap">
+                  <input
+                    type="email"
+                    id="input-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="your@email.com"
+                    autocomplete="email"
+                    required
+                  />
+                  <div class="form-input-glow"></div>
+                </div>
+                <span class="form-error" id="error-email"></span>
+              </div>
+
+            </div>
+
+            <!-- Subject -->
+            <div class="form-group" id="group-subject">
+              <label for="input-subject" class="form-label">
+                <i class="fa-solid fa-tag"></i> Subject
+              </label>
+              <div class="form-input-wrap">
+                <input
+                  type="text"
+                  id="input-subject"
+                  name="subject"
+                  class="form-input"
+                  placeholder="What is this about?"
+                  required
+                />
+                <div class="form-input-glow"></div>
+              </div>
+              <span class="form-error" id="error-subject"></span>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group" id="group-message">
+              <label for="input-message" class="form-label">
+                <i class="fa-solid fa-message"></i> Message
+              </label>
+              <div class="form-input-wrap">
+                <textarea
+                  id="input-message"
+                  name="message"
+                  class="form-input form-textarea"
+                  placeholder="Write your message here..."
+                  rows="5"
+                  required
+                ></textarea>
+                <div class="form-input-glow"></div>
+              </div>
+              <span class="form-error" id="error-message"></span>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="form-submit-btn" id="form-submit">
+              <span class="form-submit-text">
+                <i class="fa-solid fa-paper-plane"></i>
+                Send Message
+              </span>
+              <span class="form-submit-loading" style="display:none;">
+                <i class="fa-solid fa-spinner fa-spin"></i>
+                Sending...
+              </span>
+              <div class="form-submit-ripple"></div>
+            </button>
+
+            <!-- Success / Error feedback -->
+            <div class="form-feedback" id="form-feedback" style="display:none;">
+              <div class="form-feedback-inner" id="form-feedback-inner">
+                <i class="fa-solid fa-circle-check" id="form-feedback-icon"></i>
+                <p id="form-feedback-msg"></p>
+              </div>
+            </div>
+
+            <!-- Bottom accent line -->
+            <div class="form-bottom-line"></div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- JS -->
+  <script src="js/footer.js"></script>
+  <script src="js/contact.js"></script>
+
+</body>
+</html>

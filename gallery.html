@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — CESA</title>
+  <meta name="description" content="CESA Gallery — Tech Quest Arena, Debate Competition, Antratech 2.0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Scroll To Top -->
+  <a href="#" id="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <!-- ── NAVBAR ─────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="navbar-inner">
+      <a href="home.html" class="navbar-logo">
+        <img src="images/cesa-logo.png" alt="CESA Logo" />
+        <span class="navbar-logo-text">CESA</span>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="home.html"       class="nav-link">Home</a></li>
+        <li><a href="about.html"      class="nav-link">About</a></li>
+        <li><a href="activities.html" class="nav-link">Activities</a></li>
+        <li><a href="gallery.html"    class="nav-link active">Gallery</a></li>
+        <li><a href="team.html"       class="nav-link">Team</a></li>
+        <li><a href="contact.html"    class="nav-link">Contact</a></li>
+      </ul>
+      <button class="navbar-hamburger" id="hamburger" aria-label="Open menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="navbar-mobile" id="navbar-mobile">
+    <button class="navbar-mobile-close" id="mobile-close" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <a href="home.html"       class="nav-link">Home</a>
+    <a href="about.html"      class="nav-link">About</a>
+    <a href="activities.html" class="nav-link">Activities</a>
+    <a href="gallery.html"    class="nav-link active">Gallery</a>
+    <a href="team.html"       class="nav-link">Team</a>
+    <a href="contact.html"    class="nav-link">Contact</a>
+  </div>
+
+  <!-- ── PAGE HERO ──────────────────────────────────────────── -->
+  <section class="page-hero gallery-hero">
+    <canvas class="page-hero-canvas" id="gallery-hero-canvas"></canvas>
+    <div class="gallery-hero-glow-1"></div>
+    <div class="gallery-hero-glow-2"></div>
+    <div class="page-hero-content">
+      <p class="page-hero-eyebrow">Captured Moments</p>
+      <h1 class="page-hero-title">Gallery</h1>
+      <p class="page-hero-subtitle">Reliving Every Achievement</p>
+      <div class="page-hero-line"></div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       VIEW A — EVENT CARDS (shown by default)
+       ================================================================ -->
+  <section class="gallery-view" id="view-events">
+    <div class="container">
+
+      <div class="section-header reveal reveal-up">
+        <span class="section-eyebrow">Our Events</span>
+        <h2 class="section-title">Select an Event</h2>
+        <div class="section-divider"></div>
+        <p class="gallery-intro-text">
+          Click on any event card below to explore its full gallery —
+          winners, runner-ups, and memorable moments from the event.
+        </p>
+      </div>
+
+      <!-- Event Cards Grid -->
+      <div class="gallery-event-cards hover-group">
+
+        <!-- ── Tech Quest Arena ─────────────────────────── -->
+        <article
+          class="gallery-event-card hover-item reveal reveal-up delay-1"
+          data-event="techquest"
+          role="button"
+          tabindex="0"
+          aria-label="View Tech Quest Arena gallery"
+        >
+          <!-- Cover image area -->
+          <div class="gecard-cover">
+            <img
+              src="images/gallery/techquest/cover.jpg"
+              alt="Tech Quest Arena cover"
+              class="gecard-cover-img"
+              onerror="this.parentElement.classList.add('gecard-no-img')"
+            />
+            <div class="gecard-cover-overlay"></div>
+            <!-- Floating badge -->
+            <div class="gecard-badge gecard-badge-blue">
+              <i class="fa-solid fa-chess-knight"></i>
+            </div>
+            <!-- Hover "Open" indicator -->
+            <div class="gecard-open-hint">
+              <i class="fa-solid fa-images"></i>
+              <span>Open Gallery</span>
+            </div>
+          </div>
+
+          <!-- Card body -->
+          <div class="gecard-body">
+            <div class="gecard-body-top">
+              <span class="tag tag-blue">Technical</span>
+              <div class="gecard-meta-icons">
+                <span title="Winner"><i class="fa-solid fa-crown" style="color:var(--neon-gold)"></i></span>
+                <span title="Runner-Up"><i class="fa-solid fa-medal" style="color:#c0c0c0"></i></span>
+                <span title="Moments"><i class="fa-solid fa-camera" style="color:var(--neon-blue)"></i></span>
+              </div>
+            </div>
+            <h3 class="gecard-title">Tech Quest Arena</h3>
+            <p class="gecard-desc">
+              CESA's premier technical competition — coding challenges,
+              quizzes, debugging rounds, and problem-solving tasks across multiple stages.
+            </p>
+            <div class="gecard-footer">
+              <span class="gecard-cta">
+                View Gallery <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- Hover glow -->
+          <div class="gecard-glow gecard-glow-blue"></div>
+        </article>
+
+        <!-- ── Debate Competition ───────────────────────── -->
+        <article
+          class="gallery-event-card hover-item reveal reveal-up delay-2"
+          data-event="debate"
+          role="button"
+          tabindex="0"
+          aria-label="View Debate Competition gallery"
+        >
+          <div class="gecard-cover">
+            <img
+              src="images/gallery/debate/cover.jpg"
+              alt="Debate Competition cover"
+              class="gecard-cover-img"
+              onerror="this.parentElement.classList.add('gecard-no-img')"
+            />
+            <div class="gecard-cover-overlay"></div>
+            <div class="gecard-badge gecard-badge-purple">
+              <i class="fa-solid fa-microphone-lines"></i>
+            </div>
+            <div class="gecard-open-hint">
+              <i class="fa-solid fa-images"></i>
+              <span>Open Gallery</span>
+            </div>
+          </div>
+          <div class="gecard-body">
+            <div class="gecard-body-top">
+              <span class="tag tag-purple">Non-Technical</span>
+              <div class="gecard-meta-icons">
+                <span title="Winner"><i class="fa-solid fa-crown" style="color:var(--neon-gold)"></i></span>
+                <span title="Runner-Up"><i class="fa-solid fa-medal" style="color:#c0c0c0"></i></span>
+                <span title="Moments"><i class="fa-solid fa-camera" style="color:var(--neon-blue)"></i></span>
+              </div>
+            </div>
+            <h3 class="gecard-title">Debate Competition</h3>
+            <p class="gecard-desc">
+              Students argued on technology, engineering, and current affairs —
+              judged on argument quality, delivery, and rebuttal skills.
+            </p>
+            <div class="gecard-footer">
+              <span class="gecard-cta">
+                View Gallery <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+          <div class="gecard-glow gecard-glow-purple"></div>
+        </article>
+
+        <!-- ── Antratech 2.0 ────────────────────────────── -->
+        <article
+          class="gallery-event-card hover-item reveal reveal-up delay-3"
+          data-event="antratech"
+          role="button"
+          tabindex="0"
+          aria-label="View Antratech 2.0 gallery"
+        >
+          <div class="gecard-cover">
+            <img
+              src="images/gallery/antratech/cover.jpg"
+              alt="Antratech 2.0 cover"
+              class="gecard-cover-img"
+              onerror="this.parentElement.classList.add('gecard-no-img')"
+            />
+            <div class="gecard-cover-overlay"></div>
+            <div class="gecard-badge gecard-badge-gold">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="gecard-open-hint">
+              <i class="fa-solid fa-images"></i>
+              <span>Open Gallery</span>
+            </div>
+          </div>
+          <div class="gecard-body">
+            <div class="gecard-body-top">
+              <span class="tag tag-gold">Flagship Fest</span>
+              <div class="gecard-meta-icons">
+                <span title="Winner"><i class="fa-solid fa-crown" style="color:var(--neon-gold)"></i></span>
+                <span title="Runner-Up"><i class="fa-solid fa-medal" style="color:#c0c0c0"></i></span>
+                <span title="Moments"><i class="fa-solid fa-camera" style="color:var(--neon-blue)"></i></span>
+              </div>
+            </div>
+            <h3 class="gecard-title">Antratech 2.0</h3>
+            <p class="gecard-desc">
+              CESA's inter-college technical festival — students from across
+              institutions competing in technical and non-technical events.
+            </p>
+            <div class="gecard-footer">
+              <span class="gecard-cta">
+                View Gallery <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+          <div class="gecard-glow gecard-glow-gold"></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       VIEW B — EVENT DETAIL GALLERY (hidden until card clicked)
+       ================================================================ -->
+  <section class="gallery-view" id="view-detail" style="display:none;">
+    <div class="container">
+
+      <!-- ── Top Bar ────────────────────────────────────────── -->
+      <div class="gdetail-topbar">
+
+        <button class="gdetail-back-btn" id="gdetail-back">
+          <i class="fa-solid fa-chevron-left"></i>
+          <span>All Events</span>
+        </button>
+
+        <div class="gdetail-title-block">
+          <div class="gdetail-event-icon" id="gdetail-icon">
+            <i class="fa-solid fa-chess-knight"></i>
+          </div>
+          <div>
+            <h2 class="gdetail-event-name" id="gdetail-name">Tech Quest Arena</h2>
+            <p class="gdetail-event-sub"  id="gdetail-sub">CESA Technical Event</p>
+          </div>
+        </div>
+
+        <!-- Download All — top -->
+        <div class="gdetail-download-group">
+          <button class="btn btn-primary" id="btn-download-all-top">
+            <i class="fa-solid fa-file-zipper"></i>
+            Download All Photos
+          </button>
+          <button class="btn btn-ghost" id="btn-drive-top">
+            <i class="fa-brands fa-google-drive"></i>
+            Google Drive
+          </button>
+        </div>
+
+      </div>
+
+      <!-- ── WINNER ─────────────────────────────────────────── -->
+      <div class="gdetail-block" id="block-winner">
+        <div class="gdetail-block-header">
+          <div class="gdetail-block-icon gdetail-icon-gold">
+            <i class="fa-solid fa-crown"></i>
+          </div>
+          <h3 class="gdetail-block-title">Winner</h3>
+          <div class="gdetail-block-line gdetail-line-gold"></div>
+        </div>
+        <!-- Winner photos — rendered by JS -->
+        <div class="gdetail-podium-grid hover-group" id="grid-winner"></div>
+      </div>
+
+      <!-- ── RUNNER-UP ───────────────────────────────────────── -->
+      <div class="gdetail-block" id="block-runnerup">
+        <div class="gdetail-block-header">
+          <div class="gdetail-block-icon gdetail-icon-silver">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+          <h3 class="gdetail-block-title">Runner-Up</h3>
+          <div class="gdetail-block-line gdetail-line-silver"></div>
+        </div>
+        <div class="gdetail-podium-grid hover-group" id="grid-runnerup"></div>
+      </div>
+
+      <!-- ── EVENT MOMENTS ──────────────────────────────────── -->
+      <div class="gdetail-block" id="block-moments">
+        <div class="gdetail-block-header">
+          <div class="gdetail-block-icon gdetail-icon-blue">
+            <i class="fa-solid fa-camera"></i>
+          </div>
+          <h3 class="gdetail-block-title">Event Moments</h3>
+          <div class="gdetail-block-line gdetail-line-blue"></div>
+        </div>
+        <div class="gdetail-moments-grid hover-group" id="grid-moments"></div>
+      </div>
+
+      <!-- ── Download All — bottom ──────────────────────────── -->
+      <div class="gdetail-download-footer">
+        <button class="btn btn-primary btn-lg" id="btn-download-all-bottom">
+          <i class="fa-solid fa-file-zipper"></i>
+          Download All Photos
+        </button>
+        <button class="btn btn-ghost btn-lg" id="btn-drive-bottom">
+          <i class="fa-brands fa-google-drive"></i>
+          Open Google Drive Folder
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================================
+       LIGHTBOX
+       ================================================================ -->
+  <div
+    class="glightbox"
+    id="glightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Full-screen image viewer"
+    style="display:none;"
+  >
+    <!-- Backdrop -->
+    <div class="glightbox-backdrop" id="glightbox-backdrop"></div>
+
+    <!-- Close -->
+    <button class="glightbox-close" id="glightbox-close" aria-label="Close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <!-- Prev -->
+    <button class="glightbox-nav glightbox-prev" id="glightbox-prev" aria-label="Previous">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <!-- Image -->
+    <div class="glightbox-stage">
+      <div class="glightbox-loader" id="glightbox-loader">
+        <div class="glightbox-spinner"></div>
+      </div>
+      <img
+        src=""
+        alt=""
+        class="glightbox-img"
+        id="glightbox-img"
+      />
+    </div>
+
+    <!-- Next -->
+    <button class="glightbox-nav glightbox-next" id="glightbox-next" aria-label="Next">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <!-- Footer bar -->
+    <div class="glightbox-footer">
+      <span class="glightbox-counter" id="glightbox-counter">1 / 1</span>
+      <button class="glightbox-dl-btn" id="glightbox-dl" aria-label="Download image">
+        <i class="fa-solid fa-download"></i>
+        <span>Download</span>
+      </button>
+    </div>
+
+  </div>
+
+  
+  <!-- JS -->
+  <script src="js/footer.js"></script>
+  <script src="js/gallery.js"></script>
+
+</body>
+</html>

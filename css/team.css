@@ -1,0 +1,938 @@
+/* ============================================================
+   CESA WEBSITE — team.css
+   ============================================================ */
+
+/* ============================================================
+   PAGE HERO — TEAM
+   ============================================================ */
+.team-hero {
+  background: var(--bg-void);
+  position: relative;
+  overflow: hidden;
+}
+
+.team-hero-glow-1 {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  top: -100px;
+  left: -100px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(0,212,255,0.1) 0%, transparent 70%);
+  filter: blur(70px);
+  pointer-events: none;
+  animation: team-glow-1 11s ease-in-out infinite alternate;
+}
+
+.team-hero-glow-2 {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  bottom: -80px;
+  right: -80px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(168,85,247,0.09) 0%, transparent 70%);
+  filter: blur(70px);
+  pointer-events: none;
+  animation: team-glow-2 14s ease-in-out infinite alternate;
+}
+
+@keyframes team-glow-1 {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(60px, 40px); }
+}
+@keyframes team-glow-2 {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-50px, -30px); }
+}
+
+/* ============================================================
+   SHARED SECTION STYLES
+   ============================================================ */
+.team-section {
+  background: var(--bg-dark);
+  position: relative;
+}
+
+.team-section + .team-section {
+  background: var(--bg-deep);
+}
+
+.team-section + .team-section + .team-section {
+  background: var(--bg-dark);
+}
+
+.team-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--neon-blue-dim), transparent);
+}
+
+.team-section-desc {
+  font-size: var(--fs-base);
+  color: rgba(255,255,255,0.45);
+  max-width: 580px;
+  margin: 1rem auto 0;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* Team section header (icon + title inline) */
+.team-section-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: var(--space-2xl);
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.team-section-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  transition: all var(--transition-base);
+}
+
+.team-icon-blue {
+  background: var(--neon-blue-faint);
+  border: 1px solid var(--neon-blue-dim);
+  color: var(--neon-blue);
+  box-shadow: var(--glow-blue-soft);
+}
+
+.team-icon-purple {
+  background: var(--neon-purple-faint);
+  border: 1px solid var(--neon-purple-dim);
+  color: var(--neon-purple);
+  box-shadow: var(--glow-purple-soft);
+}
+
+.team-icon-gold {
+  background: rgba(255,215,0,0.08);
+  border: 1px solid rgba(255,215,0,0.25);
+  color: var(--neon-gold);
+  box-shadow: var(--glow-gold);
+}
+
+.team-section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: linear-gradient(135deg, #fff 40%, var(--neon-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================================
+   FACULTY SECTION
+   ============================================================ */
+.faculty-section {
+  background: var(--bg-void);
+  position: relative;
+}
+
+.faculty-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--neon-blue-dim), transparent);
+}
+
+/* Faculty cards row — 3 centered cards */
+.faculty-cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* ── Faculty Card ── */
+.faculty-card {
+  position: relative;
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  transition: all var(--transition-base);
+}
+
+.faculty-card:hover {
+  transform: translateY(-8px);
+}
+
+/* HOD card slightly taller / featured */
+.faculty-card-hod {
+  border-color: var(--neon-blue-dim);
+  box-shadow: 0 0 30px rgba(0,212,255,0.05);
+}
+
+/* Card top (avatar area) */
+.faculty-card-top {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+/* Avatar */
+.faculty-avatar-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faculty-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: var(--bg-elevated);
+  border: 2px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: rgba(255,255,255,0.3);
+  position: relative;
+  z-index: 2;
+  transition: all var(--transition-base);
+}
+
+.faculty-avatar-large {
+  width: 100px;
+  height: 100px;
+  font-size: 2.25rem;
+}
+
+.faculty-card:hover .faculty-avatar {
+  border-color: var(--neon-blue-dim);
+  color: var(--neon-blue);
+}
+
+/* Rotating ring around avatar */
+.faculty-avatar-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 116px;
+  height: 116px;
+  margin-top: -58px;
+  margin-left: -58px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,212,255,0.15);
+  animation: faculty-ring-spin 12s linear infinite;
+  z-index: 1;
+}
+
+.faculty-avatar-large + .faculty-avatar-ring {
+  width: 130px;
+  height: 130px;
+  margin-top: -65px;
+  margin-left: -65px;
+}
+
+.faculty-avatar-ring::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--neon-blue);
+  box-shadow: var(--glow-blue);
+}
+
+.faculty-ring-blue   { border-color: rgba(0,212,255,0.2); }
+.faculty-ring-purple { border-color: rgba(168,85,247,0.2); animation-direction: reverse; }
+
+.faculty-ring-purple::before {
+  background: var(--neon-purple);
+  box-shadow: var(--glow-purple);
+}
+
+@keyframes faculty-ring-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Ambient glow behind avatar */
+.faculty-avatar-glow {
+  position: absolute;
+  inset: -10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,212,255,0.08) 0%, transparent 70%);
+  animation: faculty-glow-pulse 4s ease-in-out infinite;
+  z-index: 0;
+}
+
+.faculty-glow-blue-soft   { background: radial-gradient(circle, rgba(0,212,255,0.1) 0%, transparent 70%); }
+.faculty-glow-purple-soft { background: radial-gradient(circle, rgba(168,85,247,0.1) 0%, transparent 70%); }
+
+@keyframes faculty-glow-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50%       { transform: scale(1.2); opacity: 1; }
+}
+
+/* Badge (small icon chip, top-right of avatar) */
+.faculty-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  z-index: 3;
+  border: 2px solid var(--bg-dark);
+}
+
+.faculty-badge-gold   { background: rgba(255,215,0,0.9); color: #000; }
+.faculty-badge-blue   { background: var(--neon-blue); color: #000; }
+.faculty-badge-purple { background: var(--neon-purple); color: #fff; }
+
+/* Card body */
+.faculty-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+}
+
+.faculty-name {
+  font-family: var(--font-heading);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: color var(--transition-base);
+}
+
+.faculty-card:hover .faculty-name { color: var(--neon-blue); }
+
+.faculty-position {
+  font-family: var(--font-ui);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.faculty-position-gold   { color: var(--neon-gold);   text-shadow: var(--glow-gold); }
+.faculty-position-blue   { color: var(--neon-blue);   text-shadow: 0 0 8px rgba(0,212,255,0.4); }
+.faculty-position-purple { color: var(--neon-purple); text-shadow: 0 0 8px rgba(168,85,247,0.4); }
+
+.faculty-dept {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.04em;
+}
+
+.faculty-institution {
+  font-family: var(--font-body);
+  font-size: var(--fs-xs);
+  color: rgba(255,255,255,0.3);
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.faculty-divider {
+  width: 40px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+  border-radius: var(--radius-full);
+  margin: 0.5rem auto;
+}
+
+.faculty-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-full);
+  font-family: var(--font-ui);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  transition: all var(--transition-base);
+  margin-top: 0.25rem;
+}
+
+.faculty-linkedin:hover {
+  border-color: var(--neon-blue-dim);
+  color: var(--neon-blue);
+  box-shadow: var(--glow-blue-soft);
+}
+
+/* Faculty card background glow */
+.faculty-card-glow {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.faculty-glow-gold    { background: radial-gradient(ellipse at 50% 0%, rgba(255,215,0,0.07) 0%, transparent 65%); }
+.faculty-glow-blue-card   { background: radial-gradient(ellipse at 50% 0%, rgba(0,212,255,0.1) 0%, transparent 65%); }
+.faculty-glow-purple-card { background: radial-gradient(ellipse at 50% 0%, rgba(168,85,247,0.1) 0%, transparent 65%); }
+
+.faculty-card:hover .faculty-card-glow { opacity: 1; }
+.faculty-card-hod:hover { border-color: var(--neon-blue-dim); box-shadow: var(--glow-blue-soft); }
+
+/* ============================================================
+   PRESIDENT CARD
+   ============================================================ */
+.president-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.president-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 3.5rem;
+  border-radius: var(--radius-xl);
+  max-width: 760px;
+  width: 100%;
+  overflow: hidden;
+  border-color: rgba(255,215,0,0.2);
+  transition: all var(--transition-base);
+}
+
+.president-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,215,0,0.4);
+  box-shadow: 0 0 40px rgba(255,215,0,0.06);
+}
+
+/* Photo */
+.president-photo-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.president-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2;
+  border: 3px solid rgba(255,215,0,0.3);
+  filter: drop-shadow(0 0 16px rgba(255,215,0,0.2));
+}
+
+.president-photo-fallback {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: var(--bg-elevated);
+  border: 3px solid rgba(255,215,0,0.3);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: rgba(255,255,255,0.2);
+  position: relative;
+  z-index: 2;
+}
+
+.president-photo-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 172px;
+  height: 172px;
+  margin-top: -86px;
+  margin-left: -86px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,215,0,0.2);
+  animation: pres-ring-1 14s linear infinite;
+  z-index: 1;
+}
+
+.president-photo-ring::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--neon-gold);
+  box-shadow: var(--glow-gold);
+}
+
+.president-photo-ring-2 {
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  border-color: rgba(255,215,0,0.1);
+  animation: pres-ring-2 20s linear infinite reverse;
+}
+
+@keyframes pres-ring-1 {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes pres-ring-2 {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* President info */
+.president-info {
+  flex: 1;
+}
+
+.president-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.9rem;
+  background: rgba(255,215,0,0.1);
+  border: 1px solid rgba(255,215,0,0.25);
+  border-radius: var(--radius-full);
+  font-family: var(--font-ui);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--neon-gold);
+  margin-bottom: 0.75rem;
+}
+
+.president-name {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.president-position {
+  font-family: var(--font-ui);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--neon-gold);
+  margin-bottom: 0.75rem;
+  text-shadow: var(--glow-gold);
+}
+
+.president-meta {
+  margin-bottom: 1.25rem;
+}
+
+.president-class {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-ui);
+  font-size: var(--fs-xs);
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.08em;
+}
+
+.president-class i { color: var(--neon-blue); }
+
+.president-contact-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.president-linkedin,
+.president-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.25rem;
+  border-radius: var(--radius-md);
+  font-family: var(--font-ui);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all var(--transition-base);
+}
+
+.president-linkedin {
+  background: var(--neon-blue-faint);
+  border: 1px solid var(--neon-blue-dim);
+  color: var(--neon-blue);
+}
+
+.president-linkedin:hover {
+  border-color: var(--neon-blue);
+  color: #fff;
+  box-shadow: var(--glow-blue-soft);
+}
+
+.president-contact-btn {
+  background: rgba(255,215,0,0.08);
+  border: 1px solid rgba(255,215,0,0.2);
+  color: var(--neon-gold);
+}
+
+.president-contact-btn:hover {
+  border-color: rgba(255,215,0,0.5);
+  color: #fff;
+  box-shadow: var(--glow-gold);
+}
+
+/* President card glow */
+.president-card-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 20% 50%, rgba(255,215,0,0.06) 0%, transparent 60%);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* ============================================================
+   TEAM CARDS GRID (all teams)
+   ============================================================ */
+.team-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-xl);
+}
+
+/* ── Member Card ── */
+.member-card {
+  position: relative;
+  padding: 1.75rem 1.5rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: all var(--transition-base);
+}
+
+.member-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Photo wrap */
+.member-photo-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.member-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2;
+  border: 2px solid rgba(255,255,255,0.1);
+  transition: all var(--transition-base);
+}
+
+.member-card:hover .member-photo {
+  border-color: var(--neon-blue-dim);
+  filter: drop-shadow(0 0 10px rgba(0,212,255,0.3));
+}
+
+.member-photo-fallback {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: var(--bg-elevated);
+  border: 2px solid rgba(255,255,255,0.08);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: rgba(255,255,255,0.15);
+  position: relative;
+  z-index: 2;
+}
+
+/* Photo ring */
+.member-photo-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110px;
+  height: 110px;
+  margin-top: -55px;
+  margin-left: -55px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: all var(--transition-base);
+  z-index: 1;
+}
+
+.ring-blue   { border-color: rgba(0,212,255,0.12); }
+.ring-purple { border-color: rgba(168,85,247,0.12); }
+.ring-gold   { border-color: rgba(255,215,0,0.15); }
+
+.member-card:hover .ring-blue   { border-color: rgba(0,212,255,0.35); box-shadow: 0 0 12px rgba(0,212,255,0.15); animation: member-ring-spin 8s linear infinite; }
+.member-card:hover .ring-purple { border-color: rgba(168,85,247,0.35); box-shadow: 0 0 12px rgba(168,85,247,0.15); animation: member-ring-spin 8s linear infinite; }
+.member-card:hover .ring-gold   { border-color: rgba(255,215,0,0.35); box-shadow: 0 0 12px rgba(255,215,0,0.1); animation: member-ring-spin 8s linear infinite; }
+
+@keyframes member-ring-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Member info */
+.member-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.member-name {
+  font-family: var(--font-heading);
+  font-size: var(--fs-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: color var(--transition-base);
+}
+
+.member-card:hover .member-name { color: var(--neon-blue); }
+
+.member-position {
+  font-family: var(--font-ui);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.position-blue   { color: var(--neon-blue); }
+.position-purple { color: var(--neon-purple); }
+.position-gold   { color: var(--neon-gold); }
+
+.member-class {
+  font-family: var(--font-ui);
+  font-size: var(--fs-xs);
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.member-class i {
+  color: var(--neon-blue);
+  font-size: 0.7rem;
+}
+
+/* Actions row */
+.member-actions {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+.member-action-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all var(--transition-base);
+  backdrop-filter: blur(8px);
+}
+
+.member-btn-linkedin {
+  color: rgba(255,255,255,0.4);
+}
+
+.member-btn-linkedin:hover {
+  border-color: var(--neon-blue-dim);
+  color: var(--neon-blue);
+  box-shadow: var(--glow-blue-soft);
+  transform: translateY(-2px);
+}
+
+.member-btn-contact {
+  color: rgba(255,255,255,0.4);
+}
+
+.member-btn-contact:hover {
+  border-color: var(--neon-purple-dim);
+  color: var(--neon-purple);
+  box-shadow: var(--glow-purple-soft);
+  transform: translateY(-2px);
+}
+
+/* Member card background glow */
+.member-card-glow {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.glow-blue   { background: radial-gradient(ellipse at 50% 0%, rgba(0,212,255,0.1) 0%, transparent 65%); }
+.glow-purple { background: radial-gradient(ellipse at 50% 0%, rgba(168,85,247,0.1) 0%, transparent 65%); }
+.glow-gold   { background: radial-gradient(ellipse at 50% 0%, rgba(255,215,0,0.08) 0%, transparent 65%); }
+
+.member-card:hover .member-card-glow { opacity: 1; }
+
+/* Blue team hover border */
+.member-card:hover:has(.glow-blue) {
+  border-color: var(--neon-blue-dim);
+  box-shadow: var(--glow-blue-soft);
+}
+
+/* Purple team hover border */
+.member-card:hover:has(.glow-purple) {
+  border-color: var(--neon-purple-dim);
+  box-shadow: var(--glow-purple-soft);
+}
+
+/* Gold team hover border */
+.member-card:hover:has(.glow-gold) {
+  border-color: rgba(255,215,0,0.3);
+  box-shadow: 0 0 20px rgba(255,215,0,0.06);
+}
+
+/* ============================================================
+   TREASURER WRAP (single centered card)
+   ============================================================ */
+.treasurer-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.member-card-treasurer {
+  max-width: 280px;
+  border-color: rgba(255,215,0,0.15);
+}
+
+.member-card-treasurer:hover {
+  border-color: rgba(255,215,0,0.35);
+  box-shadow: 0 0 30px rgba(255,215,0,0.06);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .faculty-cards-row {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+  }
+
+  .president-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 2.5rem 2rem;
+  }
+
+  .president-contact-row {
+    justify-content: center;
+  }
+
+  .president-card-glow {
+    background: radial-gradient(ellipse at 50% 0%, rgba(255,215,0,0.06) 0%, transparent 60%);
+  }
+}
+
+@media (max-width: 768px) {
+  .faculty-cards-row {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .team-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-section-header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-cards-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .president-photo {
+    width: 110px;
+    height: 110px;
+  }
+
+  .president-photo-ring {
+    width: 140px;
+    height: 140px;
+    margin-top: -70px;
+    margin-left: -70px;
+  }
+
+  .president-photo-ring-2 {
+    width: 166px;
+    height: 166px;
+    margin-top: -83px;
+    margin-left: -83px;
+  }
+
+  .faculty-card {
+    padding: 2rem 1.5rem;
+  }
+}

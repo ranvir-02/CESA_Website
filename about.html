@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — CESA</title>
+  <meta name="description" content="About CESA — Mission, Vision, Objectives and About R. C. Patel College of Engineering and Polytechnic, Shirpur" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/about.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Scroll To Top -->
+  <a href="#" id="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <!-- ── NAVBAR ─────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="navbar-inner">
+      <a href="home.html" class="navbar-logo">
+        <img src="images/cesa-logo.png" alt="CESA Logo" />
+        <span class="navbar-logo-text">CESA</span>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="home.html"       class="nav-link">Home</a></li>
+        <li><a href="about.html"      class="nav-link active">About</a></li>
+        <li><a href="activities.html" class="nav-link">Activities</a></li>
+        <li><a href="gallery.html"    class="nav-link">Gallery</a></li>
+        <li><a href="team.html"       class="nav-link">Team</a></li>
+        <li><a href="contact.html"    class="nav-link">Contact</a></li>
+      </ul>
+      <button class="navbar-hamburger" id="hamburger" aria-label="Open menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="navbar-mobile" id="navbar-mobile">
+    <button class="navbar-mobile-close" id="mobile-close" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <a href="home.html"       class="nav-link">Home</a>
+    <a href="about.html"      class="nav-link active">About</a>
+    <a href="activities.html" class="nav-link">Activities</a>
+    <a href="gallery.html"    class="nav-link">Gallery</a>
+    <a href="team.html"       class="nav-link">Team</a>
+    <a href="contact.html"    class="nav-link">Contact</a>
+  </div>
+
+  <!-- ── PAGE HERO ──────────────────────────────────────────── -->
+  <section class="page-hero about-hero">
+    <canvas class="page-hero-canvas" id="about-hero-canvas"></canvas>
+    <div class="about-hero-glow-1"></div>
+    <div class="about-hero-glow-2"></div>
+    <div class="page-hero-content">
+      <p class="page-hero-eyebrow">Who We Are</p>
+      <h1 class="page-hero-title">About CESA</h1>
+      <p class="page-hero-subtitle">
+        Learn • Innovate • Lead
+      </p>
+      <div class="page-hero-line"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT CESA ─────────────────────────────────────────── -->
+  <section class="section about-cesa-section" id="about-cesa">
+    <div class="container">
+      <div class="about-cesa-grid">
+
+        <!-- Logo side -->
+        <div class="about-cesa-logo-col reveal reveal-left">
+          <div class="about-cesa-logo-wrap">
+            <img src="images/cesa-logo.png" alt="CESA Logo" class="about-cesa-logo" />
+            <div class="about-cesa-logo-ring about-cesa-ring-1"></div>
+            <div class="about-cesa-logo-ring about-cesa-ring-2"></div>
+            <div class="about-cesa-logo-glow"></div>
+          </div>
+        </div>
+
+        <!-- Text side -->
+        <div class="about-cesa-text reveal reveal-right">
+          <span class="section-eyebrow">About CESA</span>
+          <h2 class="section-title text-left">
+            Computer Engineering<br />
+            <span class="text-neon-blue">Students Association</span>
+          </h2>
+          <p>
+            CESA — the Computer Engineering Students Association — is the
+            official student body of the Computer Engineering Department at
+            R. C. Patel College of Engineering and Polytechnic, Shirpur.
+            Established to represent, empower, and unite students of the
+            Computer Engineering discipline, CESA serves as the central
+            platform for academic, technical, cultural, and sporting
+            activities within the department.
+          </p>
+          <p>
+            Through a diverse range of programs and initiatives, CESA bridges
+            the gap between theoretical knowledge and practical application.
+            The association believes that a well-rounded engineer is not only
+            technically proficient but also a capable communicator, a creative
+            thinker, and a confident leader.
+          </p>
+          <p>
+            From organizing inter-college competitions and technical workshops
+            to hosting cultural fests and sports tournaments, CESA creates
+            opportunities for students to discover their potential, build
+            lasting friendships, and grow into the engineers of tomorrow.
+          </p>
+
+          <div class="about-cesa-tags">
+            <span class="tag tag-blue">Technical</span>
+            <span class="tag tag-purple">Cultural</span>
+            <span class="tag tag-blue">Leadership</span>
+            <span class="tag tag-purple">Sports</span>
+            <span class="tag tag-blue">Competitions</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MISSION & VISION ───────────────────────────────────── -->
+  <section class="section mv-section" id="mission-vision">
+    <div class="container">
+
+      <div class="section-header reveal reveal-up">
+        <span class="section-eyebrow">Our Foundation</span>
+        <h2 class="section-title">Mission &amp; Vision</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="mv-grid">
+
+        <!-- Mission -->
+        <div class="mv-card glass reveal reveal-left delay-1">
+          <div class="mv-card-icon mv-icon-blue">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <div class="mv-card-glow mv-glow-blue"></div>
+          <div class="mv-card-label tag tag-blue">Mission</div>
+          <h3 class="mv-card-title">Our Mission</h3>
+          <p class="mv-card-text">
+            To foster a dynamic and inclusive environment that empowers
+            Computer Engineering students to develop technical expertise,
+            leadership capabilities, and professional values. CESA strives
+            to create meaningful learning experiences that prepare students
+            for the challenges of the modern technological world.
+          </p>
+          <ul class="mv-card-points">
+            <li>
+              <i class="fa-solid fa-chevron-right"></i>
+              Promote technical knowledge and hands-on learning
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i>
+              Encourage innovation, creativity, and problem-solving
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i>
+              Build a community of collaborative and ethical engineers
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i>
+              Bridge students with industry through events and activities
+            </li>
+          </ul>
+          <div class="mv-card-border mv-border-blue"></div>
+        </div>
+
+        <!-- Vision -->
+        <div class="mv-card glass reveal reveal-right delay-2">
+          <div class="mv-card-icon mv-icon-purple">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <div class="mv-card-glow mv-glow-purple"></div>
+          <div class="mv-card-label tag tag-purple">Vision</div>
+          <h3 class="mv-card-title">Our Vision</h3>
+          <p class="mv-card-text">
+            To be the most impactful and forward-thinking student association
+            in the region — one that nurtures well-rounded engineers who lead
+            with integrity, think with innovation, and contribute meaningfully
+            to society and the global technology landscape.
+          </p>
+          <ul class="mv-card-points">
+            <li>
+              <i class="fa-solid fa-chevron-right"></i>
+              Inspire a generation of tech leaders and innovators
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i>
+              Create a legacy of excellence in student achievement
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i>
+              Champion diversity, inclusion, and student voice
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i>
+              Elevate the standard of student life in Computer Engineering
+            </li>
+          </ul>
+          <div class="mv-card-border mv-border-purple"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── OBJECTIVES ─────────────────────────────────────────── -->
+  <section class="section objectives-section" id="objectives">
+    <div class="container">
+
+      <div class="section-header reveal reveal-up">
+        <span class="section-eyebrow">What We Stand For</span>
+        <h2 class="section-title">Our Objectives</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="objectives-grid hover-group">
+
+        <div class="objective-card glass hover-item reveal reveal-up delay-1">
+          <div class="objective-number">01</div>
+          <div class="objective-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h4 class="objective-title">Technical Development</h4>
+          <p class="objective-desc">
+            Organise workshops, seminars, and technical events to strengthen
+            programming, problem-solving, and engineering skills among students.
+          </p>
+        </div>
+
+        <div class="objective-card glass hover-item reveal reveal-up delay-2">
+          <div class="objective-number">02</div>
+          <div class="objective-icon">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <h4 class="objective-title">Student Representation</h4>
+          <p class="objective-desc">
+            Act as the official voice of Computer Engineering students,
+            representing their interests and concerns to the department
+            and college administration.
+          </p>
+        </div>
+
+        <div class="objective-card glass hover-item reveal reveal-up delay-3">
+          <div class="objective-number">03</div>
+          <div class="objective-icon">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <h4 class="objective-title">Competitions &amp; Events</h4>
+          <p class="objective-desc">
+            Facilitate participation in intra-college and inter-college
+            competitions, technical fests, and cultural events to broaden
+            students' horizons and build competitive spirit.
+          </p>
+        </div>
+
+        <div class="objective-card glass hover-item reveal reveal-up delay-1">
+          <div class="objective-number">04</div>
+          <div class="objective-icon">
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+          <h4 class="objective-title">Leadership &amp; Management</h4>
+          <p class="objective-desc">
+            Provide students with opportunities to take on leadership roles,
+            manage teams, and develop organisational and interpersonal skills
+            essential for professional life.
+          </p>
+        </div>
+
+        <div class="objective-card glass hover-item reveal reveal-up delay-2">
+          <div class="objective-number">05</div>
+          <div class="objective-icon">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <h4 class="objective-title">Cultural &amp; Sports</h4>
+          <p class="objective-desc">
+            Promote the overall personality development of students through
+            cultural activities, arts, sports events, and recreational
+            programs that go beyond the classroom.
+          </p>
+        </div>
+
+        <div class="objective-card glass hover-item reveal reveal-up delay-3">
+          <div class="objective-number">06</div>
+          <div class="objective-icon">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h4 class="objective-title">Community &amp; Collaboration</h4>
+          <p class="objective-desc">
+            Build a strong, supportive community among students, alumni, faculty,
+            and industry professionals to create a network that benefits
+            all members throughout their careers.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── NEON DIVIDER ───────────────────────────────────────── -->
+  <div class="container">
+    <hr class="neon-divider" />
+  </div>
+
+  <!-- ── ABOUT OUR COLLEGE ──────────────────────────────────── -->
+  <section class="section college-section" id="college">
+    <div class="container">
+
+      <div class="section-header reveal reveal-up">
+        <span class="section-eyebrow">Our Institution</span>
+        <h2 class="section-title">About Our College</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <!-- College Header Block -->
+      <div class="college-header-block reveal reveal-up delay-1">
+        <div class="college-logo-wrap">
+          <img
+            src="images/college-logo.png"
+            alt="R. C. Patel College of Engineering and Polytechnic Logo"
+            class="college-logo"
+          />
+        </div>
+        <div class="college-name-block">
+          <h2 class="college-name">
+            R. C. Patel College of Engineering<br />
+            and Polytechnic, Shirpur
+          </h2>
+          <p class="college-location">
+            <i class="fa-solid fa-location-dot"></i>
+            Shirpur, Dist. Dhule, Maharashtra, India
+          </p>
+        </div>
+      </div>
+
+      <!-- College Building Image -->
+      <div class="college-building-wrap reveal reveal-up delay-2">
+        <div class="college-building-inner">
+          <img
+            src="images/college-building.jpg"
+            alt="R. C. Patel College of Engineering and Polytechnic — Campus Building"
+            class="college-building-img"
+          />
+          <div class="college-building-overlay"></div>
+          <div class="college-building-caption">
+            <i class="fa-solid fa-building-columns"></i>
+            R. C. Patel College of Engineering and Polytechnic — Shirpur Campus
+          </div>
+        </div>
+      </div>
+
+      <!-- College Introduction -->
+      <div class="college-intro reveal reveal-up delay-1">
+        <p>
+          R. C. Patel College of Engineering and Polytechnic, Shirpur is a
+          prominent technical institution located in Shirpur, Dist. Dhule,
+          Maharashtra. Affiliated to reputed bodies and committed to providing
+          quality technical education, the institution has grown into a
+          well-recognised centre for engineering and polytechnic studies in
+          the region.
+        </p>
+        <p>
+          The college offers a wide range of undergraduate and polytechnic
+          programmes spanning multiple engineering disciplines. It provides
+          students with a strong foundation in technical knowledge alongside
+          opportunities for practical skill development, research, and
+          extracurricular engagement.
+        </p>
+      </div>
+
+      <!-- Two feature cards -->
+      <div class="college-features-grid">
+
+        <!-- Academic Excellence -->
+        <div class="college-feature-card glass reveal reveal-left delay-2">
+          <div class="college-feature-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3 class="college-feature-title">Academic Excellence</h3>
+          <p class="college-feature-text">
+            The college maintains a strong academic culture with dedicated
+            faculty, well-equipped laboratories, and a curriculum designed
+            to meet the demands of the evolving engineering industry. Students
+            are encouraged to pursue both depth and breadth in their studies,
+            supported by rigorous academic programmes and a focus on
+            conceptual clarity and applied learning.
+          </p>
+        </div>
+
+        <!-- Student Development Focus -->
+        <div class="college-feature-card glass reveal reveal-right delay-3">
+          <div class="college-feature-icon college-feature-icon-purple">
+            <i class="fa-solid fa-seedling"></i>
+          </div>
+          <h3 class="college-feature-title">Student Development Focus</h3>
+          <p class="college-feature-text">
+            Beyond academics, the institution places significant emphasis on
+            the holistic development of its students. Through a vibrant
+            ecosystem of student associations, sports facilities, cultural
+            programmes, and industry interactions, the college ensures that
+            students graduate not just as knowledgeable engineers but as
+            confident, capable, and well-rounded individuals ready to make
+            a positive impact in their professional and personal lives.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── COMPUTER ENGINEERING DEPARTMENT ───────────────────── -->
+  <section class="section dept-section" id="department">
+    <div class="container">
+
+      <div class="section-header reveal reveal-up">
+        <span class="section-eyebrow">Our Department</span>
+        <h2 class="section-title">Computer Engineering<br />Department</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="dept-grid">
+
+        <!-- Left: Description -->
+        <div class="dept-text reveal reveal-left">
+          <p>
+            The Computer Engineering Department at R. C. Patel College of
+            Engineering and Polytechnic is dedicated to producing technically
+            sound engineers with a deep understanding of computing systems,
+            software development, and emerging technologies.
+          </p>
+          <p>
+            The department offers a comprehensive curriculum that covers
+            core areas such as programming, data structures, algorithms,
+            computer networks, operating systems, database management,
+            artificial intelligence, and more. Students are trained to
+            think analytically, design solutions efficiently, and adapt
+            to the rapidly changing landscape of the technology industry.
+          </p>
+          <p>
+            Faculty members bring both academic expertise and real-world
+            experience to the classroom, creating an engaging and enriching
+            learning environment. The department actively supports student
+            initiatives, project work, and participation in technical events,
+            fostering a culture of curiosity and continuous improvement.
+          </p>
+          <p>
+            CESA operates as the student arm of this department, carrying
+            forward its values of excellence, innovation, and community
+            through every event and initiative it undertakes.
+          </p>
+        </div>
+
+        <!-- Right: Highlights panel -->
+        <div class="dept-highlights reveal reveal-right delay-2">
+
+          <div class="dept-highlight-card glass">
+            <i class="fa-solid fa-code"></i>
+            <div>
+              <h5>Core Programming</h5>
+              <p>C, C++, Java, Python and modern web technologies</p>
+            </div>
+          </div>
+
+          <div class="dept-highlight-card glass">
+            <i class="fa-solid fa-network-wired"></i>
+            <div>
+              <h5>Systems &amp; Networks</h5>
+              <p>Operating systems, computer networks, and distributed systems</p>
+            </div>
+          </div>
+
+          <div class="dept-highlight-card glass">
+            <i class="fa-solid fa-brain"></i>
+            <div>
+              <h5>Emerging Technologies</h5>
+              <p>Artificial intelligence, machine learning, and cloud computing</p>
+            </div>
+          </div>
+
+          <div class="dept-highlight-card glass">
+            <i class="fa-solid fa-database"></i>
+            <div>
+              <h5>Data &amp; Software</h5>
+              <p>Database management, software engineering, and system design</p>
+            </div>
+          </div>
+
+          <div class="dept-highlight-card glass">
+            <i class="fa-solid fa-flask"></i>
+            <div>
+              <h5>Practical Labs</h5>
+              <p>Hands-on laboratory sessions supporting every theoretical subject</p>
+            </div>
+          </div>
+
+          <div class="dept-highlight-card glass">
+            <i class="fa-solid fa-lightbulb"></i>
+            <div>
+              <h5>Project Culture</h5>
+              <p>Encouragement of individual and team projects from early semesters</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- JS -->
+  <script src="js/footer.js"></script>
+  <script src="js/about.js"></script>
+
+</body>
+</html>

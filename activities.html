@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activities — CESA</title>
+  <meta name="description" content="CESA Activities — Technical, Non-Technical, Competitions and Leadership Activities" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/activities.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Scroll To Top -->
+  <a href="#" id="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <!-- ── NAVBAR ─────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="navbar-inner">
+      <a href="home.html" class="navbar-logo">
+        <img src="images/cesa-logo.png" alt="CESA Logo" />
+        <span class="navbar-logo-text">CESA</span>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="home.html"       class="nav-link">Home</a></li>
+        <li><a href="about.html"      class="nav-link">About</a></li>
+        <li><a href="activities.html" class="nav-link active">Activities</a></li>
+        <li><a href="gallery.html"    class="nav-link">Gallery</a></li>
+        <li><a href="team.html"       class="nav-link">Team</a></li>
+        <li><a href="contact.html"    class="nav-link">Contact</a></li>
+      </ul>
+      <button class="navbar-hamburger" id="hamburger" aria-label="Open menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="navbar-mobile" id="navbar-mobile">
+    <button class="navbar-mobile-close" id="mobile-close" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <a href="home.html"       class="nav-link">Home</a>
+    <a href="about.html"      class="nav-link">About</a>
+    <a href="activities.html" class="nav-link active">Activities</a>
+    <a href="gallery.html"    class="nav-link">Gallery</a>
+    <a href="team.html"       class="nav-link">Team</a>
+    <a href="contact.html"    class="nav-link">Contact</a>
+  </div>
+
+  <!-- ── PAGE HERO ──────────────────────────────────────────── -->
+  <section class="page-hero activities-hero">
+    <canvas class="page-hero-canvas" id="activities-hero-canvas"></canvas>
+    <div class="activities-hero-glow-1"></div>
+    <div class="activities-hero-glow-2"></div>
+    <div class="page-hero-content">
+      <p class="page-hero-eyebrow">What We Do</p>
+      <h1 class="page-hero-title">Activities</h1>
+      <p class="page-hero-subtitle">Explore. Engage. Excel.</p>
+      <div class="page-hero-line"></div>
+    </div>
+  </section>
+
+  <!-- ── CATEGORY NAV TABS ──────────────────────────────────── -->
+  <div class="activities-tab-bar" id="activities-tab-bar">
+    <div class="container">
+      <div class="activities-tabs">
+        <button class="act-tab active" data-target="technical">
+          <i class="fa-solid fa-microchip"></i>
+          <span>Technical</span>
+        </button>
+        <button class="act-tab" data-target="non-technical">
+          <i class="fa-solid fa-masks-theater"></i>
+          <span>Non-Technical</span>
+        </button>
+        <button class="act-tab" data-target="competitions">
+          <i class="fa-solid fa-trophy"></i>
+          <span>Competitions</span>
+        </button>
+        <button class="act-tab" data-target="leadership">
+          <i class="fa-solid fa-user-tie"></i>
+          <span>Leadership</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       TECHNICAL ACTIVITIES
+       ================================================================ -->
+  <section class="activities-section active" id="technical" data-section="technical">
+    <div class="container">
+
+      <div class="section-header reveal reveal-up">
+        <span class="section-eyebrow">Category 01</span>
+        <h2 class="section-title">Technical Activities</h2>
+        <div class="section-divider"></div>
+        <p class="act-section-desc">
+          Hands-on technical events designed to sharpen engineering skills,
+          deepen programming knowledge, and cultivate a problem-solving mindset
+          among Computer Engineering students.
+        </p>
+      </div>
+
+      <div class="act-cards-grid hover-group">
+
+        <!-- Card 1 -->
+        <div class="act-card glass hover-item reveal reveal-up delay-1">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-blue">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <span class="tag tag-blue">Technical</span>
+          </div>
+          <h3 class="act-card-title">💻 Coding Challenges</h3>
+          <p class="act-card-desc">
+            Competitive programming and coding challenge events where students
+            solve real-world problems, debug programs, and demonstrate their
+            analytical thinking. These challenges help improve coding efficiency,
+             creativity, and problem-solving abilities. 🏆
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Coding Events</span>
+              <span><i class="fa-solid fa-clock"></i> Semester-Wise</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-blue"></div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="act-card glass hover-item reveal reveal-up delay-2">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-blue">
+              <i class="fa-solid fa-sitemap"></i>
+            </div>
+            <span class="tag tag-blue">Technical</span>
+          </div>
+          <h3 class="act-card-title">💡 Hackathons</h3>
+          <p class="act-card-desc">
+            Time-bound team coding challenges where students collaborate to
+            design and build innovative software solutions. Hackathons push
+            creative thinking, teamwork, and rapid prototyping skills. 🚀
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Team Event</span>
+              <span><i class="fa-solid fa-clock"></i> Annual</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-blue"></div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="act-card glass hover-item reveal reveal-up delay-3">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-blue">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <span class="tag tag-blue">Technical</span>
+          </div>
+          <h3 class="act-card-title">⚡ Debugging Challenges</h3>
+          <p class="act-card-desc">
+            Competitive events where students identify and fix errors in
+            programs under time constraints, improving their coding accuracy,
+            analytical thinking, and troubleshooting skills. 🐞
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> All Years</span>
+              <span><i class="fa-solid fa-clock"></i> Periodic</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-blue"></div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="act-card glass hover-item reveal reveal-up delay-1">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-blue">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <span class="tag tag-blue">Technical</span>
+          </div>
+          <h3 class="act-card-title">🚀 Project Exhibitions</h3>
+          <p class="act-card-desc">
+            Platforms for students to showcase their technical projects,
+            research work, and innovative applications. Encourages
+            documentation, presentation, and peer learning. 💡
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> All Years</span>
+              <span><i class="fa-solid fa-clock"></i> Semester-wise</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-blue"></div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="act-card glass hover-item reveal reveal-up delay-2">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-blue">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <span class="tag tag-blue">Technical</span>
+          </div>
+          <h3 class="act-card-title">🧠 Tech Quiz</h3>
+          <p class="act-card-desc">
+            Competitive technical quiz events testing knowledge across
+            computer science fundamentals, current technology trends,
+            general engineering aptitude, and logical reasoning. 🏆
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Individual / Team</span>
+              <span><i class="fa-solid fa-clock"></i> Events</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-blue"></div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="act-card glass hover-item reveal reveal-up delay-3">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-blue">
+              <i class="fa-solid fa-laptop"></i>
+            </div>
+            <span class="tag tag-blue">Technical</span>
+          </div>
+          <h3 class="act-card-title">🤝 Team-Based Technical Events</h3>
+          <p class="act-card-desc">
+            Collaborative technical activities where students work together
+            to solve challenges, develop solutions, and strengthen teamwork
+            and communication skills. 🚀
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> All Years</span>
+              <span><i class="fa-solid fa-clock"></i> Periodic</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-blue"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       NON-TECHNICAL ACTIVITIES
+       ================================================================ -->
+  <section class="activities-section" id="non-technical" data-section="non-technical">
+    <div class="container">
+
+      <div class="section-header reveal reveal-up">
+        <span class="section-eyebrow">Category 02</span>
+        <h2 class="section-title">Non-Technical Activities</h2>
+        <div class="section-divider"></div>
+        <p class="act-section-desc">
+          Creative, cultural, and social activities that nurture the artistic,
+          communicative, and social dimensions of student life — building
+          confidence and well-rounded personalities.
+        </p>
+      </div>
+
+      <div class="act-cards-grid hover-group">
+
+        <div class="act-card glass hover-item reveal reveal-up delay-1">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-purple">
+              <i class="fa-solid fa-microphone"></i>
+            </div>
+            <span class="tag tag-purple">Non-Technical</span>
+          </div>
+          <h3 class="act-card-title">🗣️ Debate Competitions</h3>
+          <p class="act-card-desc">
+            Structured debate events on current affairs, technology, and
+            social topics that develop students' critical thinking,
+            articulation, and public speaking abilities. 🎯
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Individual / Team</span>
+              <span><i class="fa-solid fa-clock"></i> Events</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-purple"></div>
+        </div>
+
+        <div class="act-card glass hover-item reveal reveal-up delay-2">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-purple">
+              <i class="fa-solid fa-paintbrush"></i>
+            </div>
+            <span class="tag tag-purple">Non-Technical</span>
+          </div>
+          <h3 class="act-card-title">🎨 Creative Arts</h3>
+          <p class="act-card-desc">
+            Events encompassing drawing, poster making, photography, and
+            digital art that encourage students to explore and express their
+            creativity beyond the engineering curriculum. ✨
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Individual</span>
+              <span><i class="fa-solid fa-clock"></i> Events</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-purple"></div>
+        </div>
+
+        <div class="act-card glass hover-item reveal reveal-up delay-3">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-purple">
+              <i class="fa-solid fa-music"></i>
+            </div>
+            <span class="tag tag-purple">Non-Technical</span>
+          </div>
+          <h3 class="act-card-title">🧠 General Knowledge Quiz</h3>
+          <p class="act-card-desc">
+             Engaging quiz competitions that challenge students' knowledge of
+            current affairs, technology, science, and world events while promoting
+            learning, awareness, and critical thinking. 🌍
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Individual / Group</span>
+              <span><i class="fa-solid fa-clock"></i> Student Engagement Programs</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-purple"></div>
+        </div>
+
+        <div class="act-card glass hover-item reveal reveal-up delay-1">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-purple">
+              <i class="fa-solid fa-newspaper"></i>
+            </div>
+            <span class="tag tag-purple">Non-Technical</span>
+          </div>
+          <h3 class="act-card-title">Elocution &amp; Poetry</h3>
+          <p class="act-card-desc">
+            Elocution contests and poetry recitation events that help students
+            build confidence, improve communication skills, and develop
+            effective verbal and written expression.
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Individual</span>
+              <span><i class="fa-solid fa-clock"></i> Events</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-purple"></div>
+        </div>
+
+        <div class="act-card glass hover-item reveal reveal-up delay-2">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-purple">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <span class="tag tag-purple">Non-Technical</span>
+          </div>
+          <h3 class="act-card-title">Sports Events</h3>
+          <p class="act-card-desc">
+            Inter-class and inter-department sports tournaments including
+            cricket, football, volleyball, and indoor games promoting
+            physical fitness, teamwork, and sporting spirit.
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Team Events</span>
+              <span><i class="fa-solid fa-clock"></i> Annual</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-purple"></div>
+        </div>
+
+        <div class="act-card glass hover-item reveal reveal-up delay-3">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-purple">
+              <i class="fa-solid fa-hands-holding-circle"></i>
+            </div>
+            <span class="tag tag-purple">Non-Technical</span>
+          </div>
+          <h3 class="act-card-title">Social Outreach</h3>
+          <p class="act-card-desc">
+            Community service initiatives, awareness drives, and social
+            responsibility programmes that instil in students a sense of
+            civic duty and empathy towards society.
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> All Students</span>
+              <span><i class="fa-solid fa-clock"></i> Periodic</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-purple"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       COMPETITIONS
+       ================================================================ -->
+  <section class="activities-section" id="competitions" data-section="competitions">
+    <div class="container">
+
+      <div class="section-header reveal reveal-up">
+        <span class="section-eyebrow">Category 03</span>
+        <h2 class="section-title">Competitions</h2>
+        <div class="section-divider"></div>
+        <p class="act-section-desc">
+          Intra-college and inter-college competitive events that challenge
+          students to perform at their best, represent CESA with pride,
+          and bring home recognition for the department.
+        </p>
+      </div>
+
+      <!-- Featured Events Banner -->
+      <div class="competitions-featured reveal reveal-up delay-1">
+        <div class="comp-featured-label">
+          <i class="fa-solid fa-star"></i> Flagship Events
+        </div>
+        <div class="comp-featured-events">
+          <div class="comp-featured-item">
+            <i class="fa-solid fa-chess-knight"></i>
+            <span>Tech Quest Arena</span>
+          </div>
+          <div class="comp-featured-sep">•</div>
+          <div class="comp-featured-item">
+            <i class="fa-solid fa-microphone-lines"></i>
+            <span>Debate Competition</span>
+          </div>
+          <div class="comp-featured-sep">•</div>
+          <div class="comp-featured-item">
+            <i class="fa-solid fa-rocket"></i>
+            <span>Antratech 2.0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="act-cards-grid hover-group">
+
+        <div class="act-card glass hover-item reveal reveal-up delay-1">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-gold">
+              <i class="fa-solid fa-chess-knight"></i>
+            </div>
+            <span class="tag tag-gold"> 📸 Flagship</span>
+          </div>
+          <h3 class="act-card-title"> 🤖 Tech Quest Arena</h3>
+          <p class="act-card-desc">
+            CESA's premier technical competition featuring multiple rounds
+            of coding challenges, technical quizzes, debugging rounds, and
+            problem-solving tasks. Students compete individually and in teams
+            across multiple stages. 🏆
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Team of 4</span>
+              <span><i class="fa-solid fa-clock"></i> Events</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-gold"></div>
+        </div>
+
+        <div class="act-card glass hover-item reveal reveal-up delay-2">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-gold">
+              <i class="fa-solid fa-microphone-lines"></i>
+            </div>
+            <span class="tag tag-gold"> 📸 Flagship</span>
+          </div>
+          <h3 class="act-card-title"> ⚖️ Debate Competition</h3>
+          <p class="act-card-desc">
+            A competitive debating event where students argue on technology,
+            engineering, social issues, and current affairs. Judged on
+            argument quality, delivery, logical reasoning, and rebuttal skills. 🎤
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Team of 2</span>
+              <span><i class="fa-solid fa-clock"></i> Events</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-gold"></div>
+        </div>
+
+        <div class="act-card glass hover-item reveal reveal-up delay-3">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-gold">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <span class="tag tag-gold"> 📸 Flagship</span>
+          </div>
+          <h3 class="act-card-title"> 🚀 Antratech 2.0</h3>
+          <p class="act-card-desc">
+            CESA's inter-college technical festival bringing together
+            students from across institutions to compete in technical
+            and non-technical events, fostering healthy competition
+            and inter-college networking. 🌟
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Inter-College</span>
+              <span><i class="fa-solid fa-clock"></i> Annual Fest</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-gold"></div>
+        </div>
+
+        <div class="act-card glass hover-item reveal reveal-up delay-1">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-blue">
+              <i class="fa-solid fa-code-branch"></i>
+            </div>
+            <span class="tag tag-blue">Competition</span>
+          </div>
+          <h3 class="act-card-title">🔢 Number Guessing Challenge</h3>
+          <p class="act-card-desc">
+            Regular competitive programming contests using platforms and
+            custom problem sets designed to improve data structure, algorithm,
+            and competitive coding skills. 🎯
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Individual</span>
+              <span><i class="fa-solid fa-clock"></i> Events</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-blue"></div>
+        </div>
+
+        <div class="act-card glass hover-item reveal reveal-up delay-2">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-blue">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <span class="tag tag-blue">Competition</span>
+          </div>
+          <h3 class="act-card-title">🏅 Best In Micro-Project </h3>
+          <p class="act-card-desc">
+            An event dedicated to showcasing innovative micro projects developed
+            by students. Participants demonstrate technical skills, creativity,
+            and problem-solving abilities through practical project presentations
+            and working prototypes. 🔬
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Team Event</span>
+              <span><i class="fa-solid fa-clock"></i> Events</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-blue"></div>
+        </div>
+
+        <div class="act-card glass hover-item reveal reveal-up delay-3">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-blue">
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <span class="tag tag-blue">Competition</span>
+          </div>
+          <h3 class="act-card-title">📌 Poster Presentation</h3>
+          <p class="act-card-desc">
+            Students showcase technical concepts, innovative ideas, and project
+            outcomes through visually engaging posters, promoting creativity,
+            communication, and knowledge sharing. 🚀
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Individual / Team</span>
+              <span><i class="fa-solid fa-clock"></i> Events</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-blue"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       LEADERSHIP ACTIVITIES
+       ================================================================ -->
+  <section class="activities-section" id="leadership" data-section="leadership">
+    <div class="container">
+
+      <div class="section-header reveal reveal-up">
+        <span class="section-eyebrow">Category 04</span>
+        <h2 class="section-title">Leadership Activities</h2>
+        <div class="section-divider"></div>
+        <p class="act-section-desc">
+          Programmes and initiatives designed to identify, nurture, and
+          develop the next generation of student leaders — equipping them
+          with the skills, confidence, and vision to lead effectively.
+        </p>
+      </div>
+
+      <!-- Leadership Banner -->
+      <div class="leadership-banner glass reveal reveal-up delay-1">
+        <div class="leadership-banner-icon">
+          <i class="fa-solid fa-crown"></i>
+        </div>
+        <div class="leadership-banner-text">
+          <h3>Grow Beyond the Classroom</h3>
+          <p>
+            CESA believes that every student has the potential to be a leader.
+            Our leadership activities are crafted to bring out that potential
+            through responsibility, mentorship, and real-world experience.
+          </p>
+        </div>
+        <div class="leadership-banner-glow"></div>
+      </div>
+
+      <div class="act-cards-grid hover-group">
+
+        <div class="act-card glass hover-item reveal reveal-up delay-1">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-purple">
+              <i class="fa-solid fa-crown"></i>
+            </div>
+            <span class="tag tag-purple">Leadership</span>
+          </div>
+          <h3 class="act-card-title">Student Council</h3>
+          <p class="act-card-desc">
+            The CESA student council is elected by peers and takes
+            responsibility for planning, executing, and overseeing all
+            association activities. Council members develop real
+            organisational and decision-making skills.
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Elected Members</span>
+              <span><i class="fa-solid fa-clock"></i> Year-long</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-purple"></div>
+        </div>
+
+        <div class="act-card glass hover-item reveal reveal-up delay-2">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-purple">
+              <i class="fa-solid fa-handshake-angle"></i>
+            </div>
+            <span class="tag tag-purple">Leadership</span>
+          </div>
+          <h3 class="act-card-title">Mentorship Programme</h3>
+          <p class="act-card-desc">
+            Senior students mentor juniors through academic guidance,
+            career advice, and personal development sessions — creating
+            a culture of continuous learning and peer support within the
+            department.
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Senior–Junior</span>
+              <span><i class="fa-solid fa-clock"></i> Year-long</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-purple"></div>
+        </div>
+
+        <div class="act-card glass hover-item reveal reveal-up delay-3">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-purple">
+              <i class="fa-solid fa-people-arrows"></i>
+            </div>
+            <span class="tag tag-purple">Leadership</span>
+          </div>
+          <h3 class="act-card-title">Event Management</h3>
+          <p class="act-card-desc">
+            Students take on roles in planning, coordinating, and executing
+            CESA events — managing logistics, budgets, communications, and
+            teams, gaining invaluable real-world management experience.
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Volunteer Teams</span>
+              <span><i class="fa-solid fa-clock"></i> Event-based</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-purple"></div>
+        </div>
+
+        <div class="act-card glass hover-item reveal reveal-up delay-1">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-purple">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <span class="tag tag-purple">Leadership</span>
+          </div>
+          <h3 class="act-card-title">Communication &amp; Soft Skills</h3>
+          <p class="act-card-desc">
+            Workshops on communication, teamwork, emotional intelligence,
+            time management, and interpersonal skills — preparing students
+            for professional environments beyond campus.
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> All Years</span>
+              <span><i class="fa-solid fa-clock"></i> Workshops</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-purple"></div>
+        </div>
+
+        <div class="act-card glass hover-item reveal reveal-up delay-2">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-purple">
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+            <span class="tag tag-purple">Leadership</span>
+          </div>
+          <h3 class="act-card-title">Team Lead Roles</h3>
+          <p class="act-card-desc">
+            Students are assigned as team leads for technical groups,
+            cultural squads, and sports teams — giving them hands-on
+            experience in guiding, motivating, and managing their peers.
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Assigned Leaders</span>
+              <span><i class="fa-solid fa-clock"></i> Year-long</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-purple"></div>
+        </div>
+
+        <div class="act-card glass hover-item reveal reveal-up delay-3">
+          <div class="act-card-header">
+            <div class="act-card-icon act-icon-purple">
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <span class="tag tag-purple">Leadership</span>
+          </div>
+          <h3 class="act-card-title">Student Representation</h3>
+          <p class="act-card-desc">
+            CESA members formally represent the student body in department
+            meetings, college committees, and external platforms — voicing
+            student concerns and contributing to institutional decisions.
+          </p>
+          <div class="act-card-footer">
+            <div class="act-card-meta">
+              <span><i class="fa-solid fa-users"></i> Representatives</span>
+              <span><i class="fa-solid fa-clock"></i> Year-long</span>
+            </div>
+          </div>
+          <div class="act-card-glow act-glow-purple"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- JS -->
+   <script src="js/footer.js"></script>
+  <script src="js/activities.js"></script>
+
+</body>
+</html>
